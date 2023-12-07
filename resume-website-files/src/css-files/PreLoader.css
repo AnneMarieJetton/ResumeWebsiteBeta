@@ -14,11 +14,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: darkgreen;
   }
   
   .preLoader__gif {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 50%;
+    max-height: 50%;
     position: absolute;
   }
   

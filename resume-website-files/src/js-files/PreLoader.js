@@ -6,7 +6,7 @@ const PreLoader = () => {
     <div className="preLoader">
         <img
           className="preLoader__gif"
-          src="https://thumbs.gfycat.com/DisfiguredMadeupGuernseycow-max-1mb.gif"
+          src="resume-website-files\src\other-files\Preloader plant gif without background.gif"
           alt=""
         />
         <img
