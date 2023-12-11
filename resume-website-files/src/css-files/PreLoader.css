@@ -16,16 +16,23 @@
     flex-direction: column;
     background-color: #013621;
   }
-  
-  .preLoader__gif {
-    max-width: 50%;
-    max-height: 50%;
-    position: absolute;
+
+  .preLoaderAnimation {
+    
+  }
+
+  .bottomOfPot {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;   /* Top left corner */
+    border-right: 50px solid transparent;  /* Top right corner */
+    border-bottom: 100px solid #3498db;
+  }
+
+  .topOfPot {
+    width: 200px;   /* Adjust the width as needed */
+    height: 100px;  /* Adjust the height as needed */
+    background-color: red;  /* Change the background color as needed */
+    border-radius: 20px;
   }
   
-  .preLoader__gif2 {
-    max-width: 10%;
-    max-height: 10%;
-    position: absolute;
-    margin-top: 220px;
-  }
