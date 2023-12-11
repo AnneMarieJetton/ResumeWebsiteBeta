@@ -4,20 +4,34 @@ import '../css-files/PreLoader.css';
 
 const PreLoader = () => {
 
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 3000)
+  }, [])
+
   return (
-    // <ClipLoader
-    //   size={50}
-    //   color={"#FFFFFF"}
-    //   loading={loading}
-    // />
-    <div className="preLoader">
-      <div className="PreLoaderAnimation">
+    loading 
+    
+    ?
+
+    <div className="preLoaderSpinner">
+      <div>
         <BounceLoader
           size={100}
-          color={"#FFFFFF"}
+          color={"#013621"}
           loading={true}
         />
       </div>
+    </div>
+
+    :
+
+    <div className="welcomeText">
+      Welcome
     </div>
   )
 

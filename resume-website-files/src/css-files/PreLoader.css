@@ -4,7 +4,7 @@
     padding: 0;
   }
   
-  .preLoader {
+  .preLoaderSpinner {
     position: fixed;
     top: 0;
     left: 0;
@@ -14,11 +14,62 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #013621;
+    background-color: #FFFFFF;
+    animation: spinnerAnimation 3s linear forwards;
   }
 
-  .preLoaderAnimation {
-    
+  @keyframes spinnerAnimation {
+    0% {
+      background-color: #FFFFFF;
+    }
+
+    50% {
+      background-color: #FFFFFF;
+    }
+
+    85% {
+      background-color: #013621;
+    }
+
+    100% {
+      background-color: #013621;
+    }
+  }
+
+  .welcomeText {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    background-color: #013621;
+    color: #013621;
+    opacity:1;
+    animation: fadeAnimation 3s ease-in-out forwards;
+  }
+
+  @keyframes fadeAnimation {
+    0% {
+      /* opacity: 0; */
+      color: #013621;
+    }
+
+    50% {
+      /* opacity: 1; */
+      color: #FFFFFF;
+    }
+
+    100% {
+      /* opacity: 0; */
+      color: #013621;
+    }
   }
 
   .bottomOfPot {
