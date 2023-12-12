@@ -15,7 +15,7 @@
     align-items: center;
     flex-direction: column;
     background-color: #FFFFFF;
-    animation: spinnerAnimation 3s linear forwards;
+    animation: spinnerAnimation 3.5s linear forwards;
   }
 
   @keyframes spinnerAnimation {
@@ -52,7 +52,7 @@
     background-color: #013621;
     color: #013621;
     opacity:1;
-    animation: fadeAnimation 6s ease-in-out forwards;
+    animation: fadeAnimation 3.5s ease-in-out forwards;
   }
 
   @keyframes fadeAnimation {
@@ -63,30 +63,24 @@
       height: 100%;
     }
 
-    25% {
+    40% {
       color: #FFFFFF;
       font-size: 24px;
       width: 100%;
       height: 100%;
     }
 
-    50% {
+    80% {
       color: #013621;
       font-size: 24px;
       width: 100%;
       height: 100%;
     }
 
-    75% {
-      font-size: 0px;
-      width: 10%;
-      height: 100%;
-    }
-
     100% {
       font-size: 0px;
       width: 10%;
-      height: 10%;
+      height: 100%;
     }
   }
   
