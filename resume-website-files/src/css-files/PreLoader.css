@@ -52,38 +52,41 @@
     background-color: #013621;
     color: #013621;
     opacity:1;
-    animation: fadeAnimation 3s ease-in-out forwards;
+    animation: fadeAnimation 6s ease-in-out forwards;
   }
 
   @keyframes fadeAnimation {
     0% {
-      /* opacity: 0; */
       color: #013621;
+      font-size: 24px;
+      width: 100%;
+      height: 100%;
+    }
+
+    25% {
+      color: #FFFFFF;
+      font-size: 24px;
+      width: 100%;
+      height: 100%;
     }
 
     50% {
-      /* opacity: 1; */
-      color: #FFFFFF;
+      color: #013621;
+      font-size: 24px;
+      width: 100%;
+      height: 100%;
+    }
+
+    75% {
+      font-size: 0px;
+      width: 10%;
+      height: 100%;
     }
 
     100% {
-      /* opacity: 0; */
-      color: #013621;
+      font-size: 0px;
+      width: 10%;
+      height: 10%;
     }
-  }
-
-  .bottomOfPot {
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;   /* Top left corner */
-    border-right: 50px solid transparent;  /* Top right corner */
-    border-bottom: 100px solid #3498db;
-  }
-
-  .topOfPot {
-    width: 200px;   /* Adjust the width as needed */
-    height: 100px;  /* Adjust the height as needed */
-    background-color: red;  /* Change the background color as needed */
-    border-radius: 20px;
   }
   

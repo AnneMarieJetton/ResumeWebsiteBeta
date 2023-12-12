@@ -10,7 +10,7 @@ function Home() {
       setLoading(true)
       setTimeout(() => {
         setLoading(false)
-      }, 6000)
+      }, 10000)
     }, [])
 
     return (
