@@ -1,15 +1,16 @@
 import React from "react"
 import '../css-files/Header.css';
+import moonLogo from '../other-files/transparent_moon.png';
 import { Link } from "react-router-dom";
 
 function Header() {
     return (
         <nav className="header">
-            {/* <Link to="/">
-                <img className="header__logo" src="https://i.pinimg.com/originals/80/7b/5c/807b5c4b02e765bb4930b7c66662ef4b.gif" alt=""/>
-            </Link> */}
-            <div className="initials header__anim__1">
-                AJ
+
+            <div className="logo__parent header__anim__1">
+                <img className="header__logo" src={moonLogo} alt="moon" />
+                <span className="header__logo__text__1">Anne</span>
+                <span className="header__logo__text__2">Web Developer</span>
             </div>
 
             <div className="header__nav">

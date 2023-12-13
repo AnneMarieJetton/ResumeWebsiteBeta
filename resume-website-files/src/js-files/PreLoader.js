@@ -22,7 +22,7 @@ const PreLoader = () => {
       <div>
         <BounceLoader
           size={100}
-          color={"#013621"}
+          color={"#080808"}
           loading={true}
         />
       </div>
@@ -30,8 +30,10 @@ const PreLoader = () => {
 
     :
 
-    <div className="welcomeText">
-      Welcome
+    <div className="welcomeTextParent">
+      <div className="welcomeText">
+        Welcome
+      </div>
     </div>
   )
 

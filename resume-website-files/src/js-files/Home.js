@@ -15,7 +15,22 @@ function Home() {
 
     return (
         <div className="home">
-            {loading ? <PreLoader />:<Header />}
+            {loading 
+            
+            ? 
+            
+            <PreLoader />
+            
+            :
+
+            <div>
+              <Header />
+              <div className='main__right'>
+                uhhh....
+              </div>
+            </div>
+
+            }
         </div>
     )        
 }

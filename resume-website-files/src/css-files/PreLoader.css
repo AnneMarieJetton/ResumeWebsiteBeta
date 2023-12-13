@@ -28,12 +28,22 @@
     }
 
     85% {
-      background-color: #013621;
+      background-color: #080808;
     }
 
     100% {
-      background-color: #013621;
+      /* background-color: #013621; */
+      background-color: #080808;
     }
+  }
+
+  .welcomeTextParent {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    /* top: 0;
+    left: 0; */
   }
 
   .welcomeText {
@@ -49,15 +59,14 @@
     font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
     font-size: 24px;
     font-style: italic;
-    background-color: #013621;
-    color: #013621;
+    background-color: #080808;
     opacity:1;
     animation: fadeAnimation 3.5s ease-in-out forwards;
   }
 
   @keyframes fadeAnimation {
     0% {
-      color: #013621;
+      color: #080808;
       font-size: 24px;
       width: 100%;
       height: 100%;
@@ -71,7 +80,7 @@
     }
 
     80% {
-      color: #013621;
+      color: #080808;
       font-size: 24px;
       width: 100%;
       height: 100%;
