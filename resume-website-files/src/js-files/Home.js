@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Header from './Header';
 import "../css-files/Home.css";
 import PreLoader from './PreLoader';
+import Moon from './Moon';
 
 function Home() {
     const [loading, setLoading] = useState(false);
@@ -26,7 +27,7 @@ function Home() {
             <div>
               <Header />
               <div className='main__right'>
-                uhhh....
+                <Moon />
               </div>
             </div>
 

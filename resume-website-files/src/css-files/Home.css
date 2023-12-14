@@ -6,4 +6,5 @@
     color: #969696;
     right: 0;
     font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
+    z-index: 2;
 }

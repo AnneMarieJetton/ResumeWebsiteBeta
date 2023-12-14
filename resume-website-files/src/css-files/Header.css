@@ -40,8 +40,8 @@
 
   .header__logo__text__2 {
     font-size: 10px;
-    color: #f700ff;
-    /* color: #969696; */
+    /* color: #f700ff; */
+    color: #969696;
     display: block;
     padding-bottom: 20px;
     font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;

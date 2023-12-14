@@ -1,0 +1,10 @@
+.moon__parent{
+    background-color: white;
+    right: 0;
+    margin: 2%;
+    width: 30%;
+    height: 60%;
+    position: fixed;
+    border: 1px solid gray;
+    z-index: 1;
+}
