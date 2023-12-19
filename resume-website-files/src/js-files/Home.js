@@ -3,6 +3,8 @@ import Header from './Header';
 import "../css-files/Home.css";
 import PreLoader from './PreLoader';
 import Moon from './Moon';
+// import MainText from './MainText'
+// import StarsBackdrop from './StarsBackdrop'
 
 function Home() {
     const [loading, setLoading] = useState(false);
@@ -27,6 +29,8 @@ function Home() {
             <div>
               <Header />
               <div className='main__right'>
+                {/* <MainText /> */}
+                {/* <StarsBackdrop /> */}
                 <Moon />
               </div>
             </div>
