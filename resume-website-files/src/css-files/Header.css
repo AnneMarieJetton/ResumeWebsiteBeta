@@ -27,7 +27,7 @@
     max-height: 90%;
     display: block;
     margin: auto;
-    opacity: 0.7;
+    /* opacity: 0.7; */
   }
 
   .header__logo__text__1 {
