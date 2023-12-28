@@ -70,6 +70,10 @@
     font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
   }
 
+  .header__link:hover .header__option {
+    background-color: #111111;
+  }
+
   .header__anim__1 {
     animation: slide 0.1s linear forwards;
   }
@@ -105,4 +109,20 @@
       opacity: 1;
     }
   }
+
+  /* .hover__anim {
+    animation: hover 0.1s forwards
+  }
+
+  @keyframes hover {
+    0% {
+      background-color: #080808;
+    }
+    99% {
+      background-color: #080808;
+    }
+    100% {
+      background-color: #969696;
+    }
+  } */
   
