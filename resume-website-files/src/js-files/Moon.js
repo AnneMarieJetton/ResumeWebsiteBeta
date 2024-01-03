@@ -12,37 +12,37 @@ const Moon = () => {
     const moonRef = useRef();
 
     return (
-        <div className="moon__grandparent">
+        // <div className="moon__grandparent">
+        //     <Canvas>
+        //         <Suspense fallback={null}>
+        //             <Stars
+        //                 radius={300}
+        //                 depth={60}
+        //                 count={20000}
+        //                 factor={7}
+        //                 saturation={0}
+        //                 fade={true}
+        //             />
+        //         </Suspense>
+        //     </Canvas>
+        <div className="moon__parent">
             <Canvas>
                 <Suspense fallback={null}>
-                    <Stars
+                    <ambientLight intensity={.15} />
+                    <pointLight color="#FFFFFF" position={[1.5, -1, 3.5]} intensity={4} />
+                    {/* <Stars
                         radius={300}
                         depth={60}
                         count={20000}
                         factor={7}
                         saturation={0}
                         fade={true}
-                    />
+                    /> */}
+                    <MoonModel moonRef={moonRef} moonMap={moonMap} />
                 </Suspense>
             </Canvas>
-            <div className="moon__parent">
-                <Canvas>
-                    <Suspense fallback={null}>
-                        <ambientLight intensity={.15} />
-                        <pointLight color="#f6f3ea" position={[1.5, -1, 3.5]} intensity={4} />
-                        {/* <Stars
-                            radius={300}
-                            depth={60}
-                            count={20000}
-                            factor={7}
-                            saturation={0}
-                            fade={true}
-                        /> */}
-                        <MoonModel moonRef={moonRef} moonMap={moonMap} />
-                    </Suspense>
-                </Canvas>
-            </div>
         </div>
+        // </div>
     );
 };
 
@@ -54,7 +54,7 @@ const MoonModel = ({ moonRef, moonMap }) => {
     });
 
     return (
-        <mesh ref={moonRef} scale={[3,3,3]}>
+        <mesh ref={moonRef} scale={[2.7,2.7,2.7]}>
             <sphereGeometry args={[1, 32, 32]} />
             <meshStandardMaterial map={moonMap} metalness={.1} roughness={.7} />
             <OrbitControls

@@ -3,6 +3,7 @@ import Header from './Header';
 import "../css-files/Home.css";
 import PreLoader from './PreLoader';
 import Moon from './Moon';
+import StarsBackdrop from './StarsBackdrop';
 import MainText from './MainText'
 
 function Home() {
@@ -29,7 +30,8 @@ function Home() {
               <Header />
               <div className='main__right'>
                 <MainText/>
-                <Moon />
+                {/* <Moon /> */}
+                <StarsBackdrop/>
               </div>
             </div>
 
