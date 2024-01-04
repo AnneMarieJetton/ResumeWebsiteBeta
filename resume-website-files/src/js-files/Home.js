@@ -4,7 +4,8 @@ import "../css-files/Home.css";
 import PreLoader from './PreLoader';
 import Moon from './Moon';
 import StarsBackdrop from './StarsBackdrop';
-import MainText from './MainText'
+import MainText from './MainText';
+import Spaceship from './Spaceship';
 
 function Home() {
     const [loading, setLoading] = useState(false);
@@ -30,8 +31,8 @@ function Home() {
               <Header />
               <div className='main__right'>
                 <MainText/>
-                {/* <Moon /> */}
                 <StarsBackdrop/>
+                <Spaceship/>
               </div>
             </div>
 
