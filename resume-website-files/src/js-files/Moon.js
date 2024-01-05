@@ -49,7 +49,7 @@ const Moon = () => {
 const MoonModel = ({ moonRef, moonMap }) => {
     useFrame(() => {
         if (moonRef.current) {
-            moonRef.current.rotation.y += 0.002;
+            moonRef.current.rotation.y += 0.001;
         }
     });
 

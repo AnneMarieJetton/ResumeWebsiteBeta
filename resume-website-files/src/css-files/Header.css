@@ -113,4 +113,36 @@
       opacity: 1;
     }
   }
-  
+
+  .social-links {
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.social-links a {
+    flex: 1;
+    /* margin-right: 10px; */
+    /* margin-left: 10%;
+    margin-right: 10%; */
+}
+
+.github__link img{
+    /* max-width: 100%;
+    height: auto; */
+    width: 40%;
+    height: 80%;
+    opacity: 60%;
+}
+
+.linkedin__link img{
+  height: 80%;
+  width: 40%;
+  opacity: 60%;
+}
+
+.email__link img{
+  height: 80%;
+  width: 50%;
+  opacity: 60%;
+}

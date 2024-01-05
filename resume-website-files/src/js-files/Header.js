@@ -1,8 +1,9 @@
 import React from "react"
 import '../css-files/Header.css';
 import moonLogo from '../other-files/transparent_moon.png';
-// import { Link } from "react-router-dom";
-// import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import linkedinLogo from '../other-files/linkedin_white_logo.png'
+import githubLogo from '../other-files/github_white_logo.png'
+import emailLogo from '../other-files/email_white_logo.png'
 
 
 function Header() {
@@ -42,82 +43,21 @@ function Header() {
                         <span>Contact Me</span>
                     </div>
                 </a>
-
-
-                {/* <ScrollLink className="header__link"
-                    activeClass="active"
-                    to="About"
-                    spy={true}
-                    smooth={true}
-                    offset={10}
-                    duration={500}
-                >
-                    <div className="header__option header__anim__2">
-                        <span>About</span>
-                    </div>
-                </ScrollLink>
-                <ScrollLink className="header__link"
-                    activeClass="active"
-                    to="Skills"
-                    spy={true}
-                    smooth={true}
-                    offset={-10}
-                    duration={500}
-                >
-                    <div className="header__option header__anim__3">
-                        <span>Skills</span>
-                    </div>
-                </ScrollLink>
-                <ScrollLink className="header__link"
-                    activeClass="active"
-                    to="Experience"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                >
-                    <div className="header__option header__anim__4">
-                        <span>Experience</span>
-                    </div>
-                </ScrollLink>
-                <ScrollLink className="header__link"
-                    activeClass="active"
-                    to="Contact"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                >
-                    <div className="header__option header__anim__5">
-                        <span>Contact Me</span>
-                    </div>
-                </ScrollLink> */}
-                
-                {/* <Link to="/" className="header__link">
-                        <div className="header__option header__anim__2">
-                            <span>About</span>
-                        </div>
-                </Link>
-                <Link to="/" className="header__link">
-                        <div className="header__option header__anim__3">
-                            <span>Skills</span>
-                        </div>
-                </Link>
-                <Link to="/" className="header__link">
-                        <div className="header__option header__anim__4">
-                            <span>Experience</span>
-                        </div>
-                </Link>
-                <Link to="/" className="header__link">
-                        <div className="header__option header__anim__5">
-                            <span>Contact Me</span>
-                        </div>
-                </Link>
-                <Link to="/" className="header__link">
-                        <div className="header__option header__anim__6">
-                            <span>Link Symbols</span>
-                        </div>
-                </Link> */}
+                <a className="header__link">
+    <div className="header__option header__anim__6">
+        <div className="social-links">
+            <a href="https://github.com/AnneMarieJetton" className="github__link" target="_blank" rel="noopener noreferrer">
+                <img src={githubLogo} alt="GitHub" />
+            </a>
+            <a href="https://www.linkedin.com/in/anne-jetton/" className="linkedin__link" target="_blank" rel="noopener noreferrer">
+                <img src={linkedinLogo} alt="LinkedIn" />
+            </a>
+            <a href="mailto:annemariejetton@gmail.com" className="email__link">
+                <img src={emailLogo} alt="Email" />
+            </a>
+        </div>
+    </div>
+</a>
             </div>
         </nav>
     )
