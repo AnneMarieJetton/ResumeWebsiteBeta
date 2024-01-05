@@ -1,0 +1,11 @@
+.asteroid__parent{
+    background-color: transparent;
+    /* top: 5%; */
+    right: 15%;
+    /* margin: 4%; */
+    width: 40%;
+    height: 70%;
+    border-color: aliceblue;
+    border-width: 2px;
+    position: absolute;
+}

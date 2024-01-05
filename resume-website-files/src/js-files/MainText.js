@@ -1,6 +1,7 @@
 import '../css-files/MainText.css';
 import React, { useEffect, useState } from 'react';
 import Moon from './Moon';
+import Asteroid from './Asteroid';
 
 const MainText = () => {
 
@@ -49,6 +50,7 @@ const MainText = () => {
                         <li>even more stuff</li>
                     </ul>
                 </div>
+                <Asteroid/>
             </div>
 
             <div className= 'MainTextSkillsParent' id="Skills">

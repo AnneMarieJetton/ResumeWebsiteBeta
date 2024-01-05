@@ -28,7 +28,7 @@ const Moon = () => {
         <div className="moon__parent">
             <Canvas>
                 <Suspense fallback={null}>
-                    <ambientLight intensity={.15} />
+                    <ambientLight intensity={.12} />
                     <pointLight color="#FFFFFF" position={[1.5, -1, 3.5]} intensity={4} />
                     {/* <Stars
                         radius={300}
