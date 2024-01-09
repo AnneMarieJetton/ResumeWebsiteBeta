@@ -69,7 +69,7 @@ const MainText = () => {
                 <div className='MainTextSkillsBody'>
                     <div className='MainTextSkillsBodyLeft'>
                         <span className='MainTextLanguagesSubtitle'>Languages</span>
-                        <ul>
+                        <ul className='MainTextSkillsBodyList'>
                             <li>Java</li>
                             <li>Python</li>
                             <li>C</li>
@@ -81,7 +81,7 @@ const MainText = () => {
                     </div>
                     <div className='MainTextSkillsBodyRight'>
                         <span className='MainTextToolsSubtitle'>Tools</span>
-                        <ul>
+                        <ul className='MainTextSkillsBodyList'>
                             <li>React.JS</li>
                             <li>THREE.JS</li>
                             <li>Vue</li>
@@ -114,11 +114,48 @@ const MainText = () => {
                     {/* Experience */}
                 </div>
                 <div className='MainTextExperienceBody'>
-                    <ul>
-                        <li>stuff</li>
-                        <li>more stuff</li>
-                        <li>even more stuff</li>
-                    </ul>
+                    <div className='MainTextExperienceBodySection1'>
+                        <div className='MainTextExperienceBodyTitles'>
+                            <span className='MainTextExperienceBodyCompanyName'>company name</span>
+                            <span className='MainTextExperienceBodyDate'>Date</span>
+                        </div>
+                        <span className='MainTextExperienceBodyJobTitle'>job title<br /></span>
+                        <span className='MainTextExperienceBodyJobDescription'>description<br /><br /></span>
+                        <span className='MainTextExperienceBodyRespAndAcom'>Responsibilities and Acomplishments:</span>
+                        <ul className='MainTextExperienceBodyRespAndAcomList'>
+                            <li>stuff</li>
+                            <li>more stuff</li>
+                            <li>even more stuff</li>
+                        </ul>
+                    </div>
+                    <div className='MainTextExperienceBodySection2'>
+                        <div className='MainTextExperienceBodyTitles'>
+                            <span className='MainTextExperienceBodyCompanyName'>company name</span>
+                            <span className='MainTextExperienceBodyDate'>Date</span>
+                        </div>
+                        <span className='MainTextExperienceBodyJobTitle'>job title<br /></span>
+                        <span className='MainTextExperienceBodyJobDescription'>description<br /><br /></span>
+                        <span className='MainTextExperienceBodyRespAndAcom'>Responsibilities and Acomplishments:</span>
+                        <ul className='MainTextExperienceBodyRespAndAcomList'>
+                            <li>stuff</li>
+                            <li>more stuff</li>
+                            <li>even more stuff</li>
+                        </ul>
+                    </div>
+                    <div className='MainTextExperienceBodySection3'>
+                        <div className='MainTextExperienceBodyTitles'>
+                            <span className='MainTextExperienceBodyCompanyName'>company name</span>
+                            <span className='MainTextExperienceBodyDate'>Date</span>
+                        </div>
+                        <span className='MainTextExperienceBodyJobTitle'>job title<br /></span>
+                        <span className='MainTextExperienceBodyJobDescription'>description<br /><br /></span>
+                        <span className='MainTextExperienceBodyRespAndAcom'>Responsibilities and Acomplishments:</span>
+                        <ul className='MainTextExperienceBodyRespAndAcomList'>
+                            <li>stuff</li>
+                            <li>more stuff</li>
+                            <li>even more stuff</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             

@@ -81,7 +81,7 @@
 }
 
 .MainTextAboutBody{
-    color: white;
+    color:#cecece;
     font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
     font-size: 20px;
     margin-top: 10px;
@@ -123,6 +123,10 @@
     margin-left: 10%;
 }
 
+.MainTextSkillsBodyList{
+    color:#cecece;
+}
+
 
 
 
@@ -147,7 +151,41 @@
     font-size: 20px;
     margin-top: 10px;
     /* margin-bottom: 10%; */
+    margin-top: 1%;
 }
+
+.MainTextExperienceBodySection1{
+
+}
+
+.MainTextExperienceBodyTitles{
+    display: flex; /* Use flexbox */
+    flex-direction: row; /* Children will be in a row */
+
+}
+
+.MainTextExperienceBodyCompanyName, .MainTextExperienceBodyDate{
+    flex: 1;
+    font-weight: bold;
+}
+
+.MainTextExperienceBodyJobTitle{
+    font-weight: bold;
+}
+
+.MainTextExperienceBodyJobDescription{
+    color:#cecece;
+}
+
+.MainTextExperienceBodyRespAndAcom{
+    font-weight: bold;
+}
+
+.MainTextExperienceBodyRespAndAcomList{
+    color:#cecece;
+}
+
+
 
 /* --------------------------------Contact---------------------------------- */
 
