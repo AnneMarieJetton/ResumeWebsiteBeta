@@ -69,6 +69,7 @@
 .MainTextAboutParent{
     height: 100%;
     padding-top: 5%;
+    /* position: relative; */
 }
 
 .MainTextAboutTitle{
@@ -108,7 +109,22 @@
     font-size: 20px;
     margin-top: 10px;
     /* margin-bottom: 10%; */
+    display: flex; /* Use flexbox */
+    flex-direction: row; /* Children will be in a row */
+    margin-top: 1%;
 }
+
+.MainTextSkillsBodyRight,
+.MainTextSkillsBodyLeft {
+    /* flex: 1; */
+}
+
+.MainTextSkillsBodyRight {
+    margin-left: 10%;
+}
+
+
+
 
 /* --------------------------------Experience---------------------------------- */
 

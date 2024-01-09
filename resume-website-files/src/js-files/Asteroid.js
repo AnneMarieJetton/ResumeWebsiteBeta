@@ -12,34 +12,39 @@ import { useGLTF, Stage} from "@react-three/drei";
 import { PresentationControls } from "@react-three/drei";
 import { OrbitControls, Stars } from "@react-three/drei";
 
-const Asteroid = () => {
+const Asteroid = ({ size, startingAngle, placementX, placementY }) => {
     const asteroidRef = useRef();
+
+    const asteroidCoordinates = {
+        top: `${placementY}%`,
+        right: `${placementX}%`,
+    };
   
     return (
-      <div className='asteroid__parent'>
+      <div className='asteroid__parent' style={asteroidCoordinates}>
         <Canvas>
           <Suspense fallback={null}>
             <ambientLight intensity={0.12} />
             <pointLight color="#FFFFFF" position={[1.5, -1, 3.5]} intensity={10} />
-            <AsteroidModel asteroidRef={asteroidRef}/>
+            <AsteroidModel asteroidRef={asteroidRef} size={size} startingAngle={startingAngle}/>
           </Suspense>
         </Canvas>
       </div>
     );
   };
 
-  const AsteroidModel = ({ asteroidRef }) => {
+  const AsteroidModel = ({ asteroidRef, size, startingAngle }) => {
     const gltf = useLoader(GLTFLoader, Asteroidgltf);
 
     useFrame(() => {
         if (asteroidRef.current) {
-            asteroidRef.current.rotation.y += 0.002;
+            asteroidRef.current.rotation.y += 0.001;
         }
     });
 
     return (
-        <mesh ref={asteroidRef} scale={[1,1,1]}>
-            <primitive object={gltf.scene} ref={asteroidRef} rotation={[0, 0, 0]} />
+        <mesh ref={asteroidRef} scale={[size,size,size]}>
+            <primitive object={gltf.scene} ref={asteroidRef} rotation={[startingAngle, startingAngle, startingAngle]} />
             <OrbitControls
                 enableZoom={false}
                 enablePan={true}

@@ -44,20 +44,20 @@ function Header() {
                     </div>
                 </a>
                 <a className="header__link">
-    <div className="header__option header__anim__6">
-        <div className="social-links">
-            <a href="https://github.com/AnneMarieJetton" className="github__link" target="_blank" rel="noopener noreferrer">
-                <img src={githubLogo} alt="GitHub" />
-            </a>
-            <a href="https://www.linkedin.com/in/anne-jetton/" className="linkedin__link" target="_blank" rel="noopener noreferrer">
-                <img src={linkedinLogo} alt="LinkedIn" />
-            </a>
-            <a href="mailto:annemariejetton@gmail.com" className="email__link">
-                <img src={emailLogo} alt="Email" />
-            </a>
-        </div>
-    </div>
-</a>
+                    <div className="header__option header__anim__6">
+                        <div className="social-links">
+                            <a href="https://github.com/AnneMarieJetton" className="github__link" target="_blank" rel="noopener noreferrer">
+                                <img src={githubLogo} alt="GitHub" />
+                            </a>
+                            <a href="https://www.linkedin.com/in/anne-jetton/" className="linkedin__link" target="_blank" rel="noopener noreferrer">
+                                <img src={linkedinLogo} alt="LinkedIn" />
+                            </a>
+                            <a href="mailto:annemariejetton@gmail.com" className="email__link">
+                                <img src={emailLogo} alt="Email" />
+                            </a>
+                        </div>
+                    </div>
+                </a>
             </div>
         </nav>
     )

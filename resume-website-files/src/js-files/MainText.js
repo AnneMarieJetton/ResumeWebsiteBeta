@@ -44,13 +44,16 @@ const MainText = () => {
                     {/* Skills */}
                 </div>
                 <div className='MainTextAboutBody'>
-                    <ul>
+                    {/* <ul>
                         <li>stuff</li>
                         <li>more stuff</li>
                         <li>even more stuff</li>
-                    </ul>
+                    </ul> */}
+                    Hey there! Im a software developer born and raised in Orlando, Florida. My Hobbies include Painting, Hiking, and BLANK.<br /><br />
+                    I am also a cat enthusiest, owning a mischevious and sporatic cat named Sir Arthur.<br /><br /> 
+                    My most recent personal coding project, and the one I am most excited about, is BLANK (link found below), where I discover <br />the best and most efficient ways to annoy a user.<br />
                 </div>
-                <Asteroid/>
+                {/* <Asteroid size={0.5} startingAngle={Math.PI / 4} placementX={30} placementY={45}/> */}
             </div>
 
             <div className= 'MainTextSkillsParent' id="Skills">
@@ -64,11 +67,35 @@ const MainText = () => {
                     {/* Skills */}
                 </div>
                 <div className='MainTextSkillsBody'>
-                    <ul>
-                        <li>stuff</li>
-                        <li>more stuff</li>
-                        <li>even more stuff</li>
-                    </ul>
+                    <div className='MainTextSkillsBodyLeft'>
+                        <span className='MainTextLanguagesSubtitle'>Languages</span>
+                        <ul>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>JavaScript</li>
+                            <li>CSS</li>
+                            <li>HTML</li>
+                        </ul>
+                    </div>
+                    <div className='MainTextSkillsBodyRight'>
+                        <span className='MainTextToolsSubtitle'>Tools</span>
+                        <ul>
+                            <li>React.JS</li>
+                            <li>THREE.JS</li>
+                            <li>Vue</li>
+                            <li>SQL</li>
+                            <li>Jenkins</li>
+                            <li>Artifactory</li>
+                            <li>Git</li>
+                            <li>JIRA</li>
+                            <li>Firebase</li>
+                            <li>Stripe</li>
+                            <li>Pygame</li>
+                            <li>Postman</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -117,7 +144,8 @@ const MainText = () => {
                     </ul>
                 </div>
             </div>
-
+            <Asteroid size={0.5} startingAngle={Math.PI / 4} placementX={30} placementY={145}/>
+            <Asteroid size={0.5} startingAngle={Math.PI / 4} placementX={30} placementY={145}/>
         </div>
     )
 
