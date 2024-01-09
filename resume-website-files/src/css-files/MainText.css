@@ -151,7 +151,7 @@
     font-size: 20px;
     margin-top: 10px;
     /* margin-bottom: 10%; */
-    margin-top: 1%;
+    /* margin-top: 1%; */
 }
 
 .MainTextExperienceBodySection1{
@@ -210,3 +210,46 @@
     margin-top: 10px;
     /* margin-bottom: 10%; */
 }
+
+.MainTextEmailParent{
+    border: 2px solid white;
+  padding: 10px;
+  border-radius: 8px;
+  padding: 0;
+}
+
+.MainTextEmailDestinationInput{
+    border-bottom: 2px solid white;
+    padding: 4px;
+}
+
+.MainTextEmailContentInput{
+    padding: 4px;
+}
+
+.EmailInput{
+    /* margin-top: 10px; */
+    background-color: transparent; /* Make the input boxes transparent */
+    border: none;
+    padding: 8px;
+    color: white; /* Set text color to white */
+}
+
+.EmailInput::placeholder {
+    color: white; /* Set placeholder text color to white */
+}
+
+button {
+    margin-top: 10px;
+    background-color: transparent;
+    border: 2px solid white; /* White border for the button */
+    color: white;
+    padding: 8px 16px; /* Adjust padding as needed */
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: white;
+    color: black; /* Change text color on hover if needed */
+  }
