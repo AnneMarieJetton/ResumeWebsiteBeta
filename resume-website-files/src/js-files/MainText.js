@@ -66,7 +66,7 @@ const MainText = () => {
                         <li>more stuff</li>
                         <li>even more stuff</li>
                     </ul> */}
-                    Hey there! Im a software developer born and raised in Orlando, Florida. My Hobbies include Painting, Hiking, and BLANK.<br /><br />
+                    Hey there! Im a software developer born and raised in Orlando, Florida. My Hobbies include Painting, Hiking, and BLANK.
                     I am also a cat enthusiest, owning a mischevious and sporatic cat named Sir Arthur.<br /><br /> 
                     My most recent personal coding project, and the one I am most excited about, is BLANK (link found below), where I discover <br />the best and most efficient ways to annoy a user.<br />
                 </div>
@@ -191,7 +191,6 @@ const MainText = () => {
                     {/* Contact Me */}
                 </div>
                 <div className='MainTextContactBody'>
-                    Interested in contacting me? click any of the three links on the side bar, or you can write me an <br />email right here! Happy Coding {'<'}3
                     <div className='MainTextEmailParent'>
                         <div className='MainTextEmailDestinationInput'>
                             <label htmlFor="emailInput">To: </label>
@@ -216,6 +215,7 @@ const MainText = () => {
 
                         <button onClick={handleSendEmail}>Send</button>
                     </div>
+                    Interested in contacting me? click any of the three links on the side bar, or you can write me an <br />email right here! Happy Coding {'<'}3
 
                 </div>
             </div>

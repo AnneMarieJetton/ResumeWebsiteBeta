@@ -1,13 +1,27 @@
 .MainTextParent{
     background: transparent;
-    width: 100%;
+    width: 80%;
     height: 100vh;
     position: fixed;
     left: 10%;
     z-index: 2;
-    /* padding: 5%; */
-    margin-left: 5%;
+    /* margin-left: 5%; */
+    padding-left: 5%;
+    padding-right: 5%;
+    /* margin-right: 5%; */
     overflow: auto;
+}
+
+.MainTextParent::-webkit-scrollbar {
+    width: 12px; /* Set the width of the scrollbar */
+}
+
+.MainTextParent::-webkit-scrollbar-thumb {
+    background-color: #0e0e0e; /* Make the thumb transparent */
+}
+
+.MainTextParent::-webkit-scrollbar-track {
+    background-color: black; /* Make the track transparent */
 }
 
 /* --------------------------------Title---------------------------------- */
@@ -193,6 +207,7 @@
 .MainTextContactParent{
     height: 100%;
     padding-top: 5%;
+    /* padding-bottom: 10%; */
 }
 
 .MainTextContactTitle{
@@ -208,31 +223,42 @@
     font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
     font-size: 20px;
     margin-top: 10px;
-    /* margin-bottom: 10%; */
+    display: flex;
+    margin-top: 100px;
 }
 
 .MainTextEmailParent{
+    position: relative;
     border: 2px solid white;
-  padding: 10px;
+  /* padding: 10px; */
   border-radius: 8px;
-  padding: 0;
+  /* padding: 0; */
+  /* margin-top: 23px; */
+  margin-right: 50px;
+  width: 70%;
+  height: 65vh;
 }
 
 .MainTextEmailDestinationInput{
     border-bottom: 2px solid white;
     padding: 4px;
+    /* display: flex; */
 }
 
 .MainTextEmailContentInput{
     padding: 4px;
+    /* width: 100%; */
 }
 
 .EmailInput{
     /* margin-top: 10px; */
     background-color: transparent; /* Make the input boxes transparent */
     border: none;
-    padding: 8px;
+    /* padding: 8px; */
     color: white; /* Set text color to white */
+    /* width: 90%; */
+    /* padding: 5px; */
+    outline: none;
 }
 
 .EmailInput::placeholder {
@@ -247,6 +273,10 @@ button {
     padding: 8px 16px; /* Adjust padding as needed */
     border-radius: 4px;
     cursor: pointer;
+    margin: 5px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
   
   button:hover {
