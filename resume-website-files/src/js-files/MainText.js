@@ -193,10 +193,21 @@ const MainText = () => {
                 <div className='MainTextContactBody'>
                     <div className='MainTextEmailParent'>
                         <div className='MainTextEmailDestinationInput'>
-                            <label htmlFor="emailInput">To: </label>
+                            <label className='EmailInputLabel' htmlFor="recipientEmailInput">To: </label>
                             <input
                                 type="email"
-                                id="emailInput"
+                                id="recipientEmailInput"
+                                className="EmailInput"
+                                value='annemariejetton@gmail.com'
+                                onChange={handleEmailChange}
+                            />
+                        </div>
+
+                        <div className='MainTextEmailDestinationInput'>
+                            <label className='EmailInputLabel' htmlFor="senderEmailInput">From: </label>
+                            <input
+                                type="email"
+                                id="senderEmailInput"
                                 className="EmailInput"
                                 value={email}
                                 onChange={handleEmailChange}
@@ -204,10 +215,9 @@ const MainText = () => {
                         </div>
 
                         <div className='MainTextEmailContentInput'>
-                            <label htmlFor="contentInput"></label>
                             <textarea
                                 id="contentInput"
-                                className="EmailInput"
+                                className="ContentInput"
                                 value={emailContent}
                                 onChange={handleContentChange}
                             />
@@ -215,7 +225,10 @@ const MainText = () => {
 
                         <button onClick={handleSendEmail}>Send</button>
                     </div>
-                    Interested in contacting me? click any of the three links on the side bar, or you can write me an <br />email right here! Happy Coding {'<'}3
+
+                    <div className='MainTextContactMessage'>
+                        Interested in contacting me? click any of the three links on the side bar, or you can write me an email right here! Happy Coding {'<'}3
+                    </div>
 
                 </div>
             </div>

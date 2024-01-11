@@ -29,7 +29,7 @@
 .MainTextTitleParent{
     height: 100%;
     /* margin-top: 22%; */
-    padding-top: 5%;
+    padding-top: 10%;
 }
 
 .MainTextTitle{
@@ -224,45 +224,81 @@
     font-size: 20px;
     margin-top: 10px;
     display: flex;
-    margin-top: 100px;
+    flex-direction: row;
+    /* margin-top: 100px; */
 }
 
 .MainTextEmailParent{
+    flex: 1;
     position: relative;
     border: 2px solid white;
-  /* padding: 10px; */
-  border-radius: 8px;
-  /* padding: 0; */
-  /* margin-top: 23px; */
-  margin-right: 50px;
-  width: 70%;
-  height: 65vh;
+    border-radius: 8px;
+    margin-right: 50px;
+    /* width: 50vw; */
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.MainTextContactMessage{
+    flex: 1;
 }
 
 .MainTextEmailDestinationInput{
     border-bottom: 2px solid white;
     padding: 4px;
-    /* display: flex; */
+    display: flex;
+    flex-direction: row;
 }
 
 .MainTextEmailContentInput{
     padding: 4px;
-    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure the container takes up full height */
+}
+
+.EmailInputLabel {
+    flex: 0 0 auto; /* Don't grow, don't shrink, stay the initial size */
 }
 
 .EmailInput{
-    /* margin-top: 10px; */
-    background-color: transparent; /* Make the input boxes transparent */
+    background-color: transparent;
     border: none;
-    /* padding: 8px; */
-    color: white; /* Set text color to white */
-    /* width: 90%; */
-    /* padding: 5px; */
+    color: white;
     outline: none;
+    flex: 1;
+    padding-left: 8px;
+    font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
+    font-size: 16px;
+}
+
+.ContentInput{
+    flex: 1; /* Take up remaining vertical space */
+    width: 100%; /* Take up full width */
+    background-color: transparent;
+    font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
+    font-size: 16px;
+    border: none;
+    color: white;
+    outline: none;
+    resize: none;
+}
+
+.ContentInput::-webkit-scrollbar {
+    width: 12px; /* Set the width of the scrollbar */
+}
+
+.ContentInput::-webkit-scrollbar-thumb {
+    background-color: #0e0e0e; /* Make the thumb transparent */
+}
+
+.ContentInput::-webkit-scrollbar-track {
+    background-color: black; /* Make the track transparent */
 }
 
 .EmailInput::placeholder {
-    color: white; /* Set placeholder text color to white */
+    color: white; 
 }
 
 button {

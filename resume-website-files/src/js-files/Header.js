@@ -43,7 +43,7 @@ function Header() {
                         <span>Contact Me</span>
                     </div>
                 </a>
-                <a className="header__link">
+                <div className="header__link">
                     <div className="header__option header__anim__6">
                         <div className="social-links">
                             <a href="https://github.com/AnneMarieJetton" className="github__link" target="_blank" rel="noopener noreferrer">
@@ -57,7 +57,7 @@ function Header() {
                             </a>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
         </nav>
     )

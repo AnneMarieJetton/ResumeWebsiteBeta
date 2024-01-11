@@ -83,33 +83,33 @@
   }
 
   .header__anim__2 {
-    animation: slide 0.1s linear 0.05s forwards;
-  }
-
-  .header__anim__3 {
     animation: slide 0.1s linear 0.1s forwards;
   }
 
-  .header__anim__4 {
-    animation: slide 0.1s linear 0.15s forwards;
-  }
-
-  .header__anim__5 {
+  .header__anim__3 {
     animation: slide 0.1s linear 0.2s forwards;
   }
 
+  .header__anim__4 {
+    animation: slide 0.1s linear 0.3s forwards;
+  }
+
+  .header__anim__5 {
+    animation: slide 0.1s linear 0.4s forwards;
+  }
+
   .header__anim__6 {
-    animation: slide 0.1s linear 0.25s forwards;
+    animation: slide 0.1s linear 0.5s forwards;
   }
 
   @keyframes slide {
     0% {
-      transform: translateX(-100%);
-      opacity: 1;
+      /* transform: translateX(-100%); */
+      opacity: 0;
     }
 
     100% {
-      transform: translateX(0);
+      /* transform: translateX(0); */
       opacity: 1;
     }
   }
