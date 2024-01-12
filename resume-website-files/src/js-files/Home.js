@@ -8,45 +8,13 @@ import MainText from './MainText';
 import Spaceship from './Spaceship';
 
 function Home() {
-    // const [loading, setLoading] = useState(false);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
       setLoading(true)
       setTimeout(() => {
         setLoading(false)
-      }, 7000)
-
-    //   const loadImageAsync = (src) => {
-    //     return new Promise((resolve, reject) => {
-    //         console.log(src);
-    //         const image = new Image();
-    //         image.onload = () => resolve();
-    //         image.onerror = (errorEvent) => {
-    //             console.error(`Error loading image from ${src}:`, errorEvent);
-    //             reject(new Error(`Error loading image from ${src}: ${errorEvent.message || 'Unknown error'}`));
-    //         };
-    //         image.src = src;
-    //     });
-    // };
-
-    //   const loadAssets = async () => {
-    //     try {
-    //         await loadImageAsync("../other-files/transparent_moon.png");
-    //         // await loadImageAsync("../other-files/linkedin_white_logo.png");
-    //         // await loadImageAsync("../other-files/github_white_logo.png");
-    //         // await loadImageAsync("../other-files/email_white_logo.png");
-    
-    //         // Set loading to false when everything is loaded
-    //         setLoading(false);
-    //     } catch (error) {
-    //         console.error(error);
-    //         // Handle the error, you might want to set loading to false even on error
-    //         setLoading(false);
-    //     }
-    //   };
-
-    //   loadAssets();
+      }, 3500)
     }, [])
 
     return (

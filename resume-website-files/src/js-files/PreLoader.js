@@ -4,19 +4,19 @@ import '../css-files/PreLoader.css';
 
 const PreLoader = () => {
 
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    setLoading(true)
-    setTimeout(() => {
-      setLoading(false)
-    }, 3500)
-  }, [])
+  // useEffect(() => {
+  //   setLoading(true)
+  //   setTimeout(() => {
+  //     setLoading(false)
+  //   }, 3500)
+  // }, [])
 
   return (
-    loading 
+    // loading 
     
-    ?
+    // ?
 
     <div className="preLoaderSpinner">
       <div>
@@ -28,13 +28,13 @@ const PreLoader = () => {
       </div>
     </div>
 
-    :
+    // :
 
-    <div className="welcomeTextParent">
-      <div className="welcomeText">
-        Welcome
-      </div>
-    </div>
+    // <div className="welcomeTextParent">
+    //   <div className="welcomeText">
+    //     Welcome
+    //   </div>
+    // </div>
   )
 
 };

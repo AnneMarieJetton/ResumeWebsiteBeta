@@ -11,6 +11,7 @@ function Header() {
         <nav className="header">
 
             <div className="logo__parent header__anim__1">
+            {/* <div className="fade__in__intro"> */}
                 <img className="header__logo" src={moonLogo} alt="moon" />
                 <span className="header__logo__text__1">Anne</span>
                 <span className="header__logo__text__2">Web Developer</span>
@@ -33,18 +34,23 @@ function Header() {
                         <span>Skills</span>
                     </div>
                 </a>
-                <a className="header__link" onClick={() => scrollToElement('Experience')}>
+                <a className="header__link" onClick={() => scrollToElement('Projects')}>
                     <div className="header__option header__anim__4">
+                        <span>Projects</span>
+                    </div>
+                </a>
+                <a className="header__link" onClick={() => scrollToElement('Experience')}>
+                    <div className="header__option header__anim__5">
                         <span>Experience</span>
                     </div>
                 </a>
                 <a className="header__link" onClick={() => scrollToElement('Contact')}>
-                    <div className="header__option header__anim__5">
+                    <div className="header__option header__anim__6">
                         <span>Contact Me</span>
                     </div>
                 </a>
                 <div className="header__link">
-                    <div className="header__option header__anim__6">
+                    <div className="header__option header__anim__7">
                         <div className="social-links">
                             <a href="https://github.com/AnneMarieJetton" className="github__link" target="_blank" rel="noopener noreferrer">
                                 <img src={githubLogo} alt="GitHub" />

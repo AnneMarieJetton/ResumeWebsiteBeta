@@ -3,6 +3,13 @@ import React, { useEffect, useState } from 'react';
 import Moon from './Moon';
 import Asteroid from './Asteroid';
 
+// import ReactLogo from '../other-files/react_white_logo.png';
+import VueLogo from '../other-files/vue_white_logo.png';
+// import CLogo from '../other-files/c_white_logo.png';
+// import SQLLogo from '../other-files/SQL_white_logo.png';
+// import JavaLogo from '../other-files/java_white_logo.png';
+// import PythonLogo from '../other-files/python_white_logo.png';
+
 const MainText = () => {
 
     const [email, setEmail] = useState('');
@@ -112,6 +119,62 @@ const MainText = () => {
                             <li>Pygame</li>
                             <li>Postman</li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div className= 'MainTextProjectsParent' id="Projects">
+                <div className='MainTextProjectsTitle MainTextAnimation'>
+                    <span>P</span>
+                    <span>r</span>
+                    <span>o</span>
+                    <span>j</span>
+                    <span>e</span>
+                    <span>c</span>
+                    <span>t</span>
+                    <span>s</span>
+                    {/* projects */}
+                </div>
+                <div className='MainTextProjectsBody'>
+                    <div className='MainTextProjectsBodyLeft'>
+                        <div className='ProjectContainer'>
+                            <div className='ProjectContainerImage'>
+                                <img className="" src={VueLogo} alt="VueLogo" />
+                            </div>
+                            <div className='ProjectContainerText'>text</div>
+                        </div>
+                        <div className='ProjectContainer'>
+                            <div className='ProjectContainerImage'>
+                                {/* <img className="" src={Logo} alt="" /> */}
+                            </div>
+                            <div className='ProjectContainerText'>text</div>
+                        </div>
+                        <div className='ProjectContainer'>
+                            <div className='ProjectContainerImage'>
+                                {/* <img className="" src={Logo} alt="" /> */}
+                            </div>
+                            <div className='ProjectContainerText'>text</div>
+                        </div>
+                    </div>
+                    <div className='MainTextProjectsBodyRight'>
+                        <div className='ProjectContainer'>
+                            <div className='ProjectContainerImage'>
+                                {/* <img className="" src={Logo} alt="" /> */}
+                            </div>
+                            <div className='ProjectContainerText'>text</div>
+                        </div>
+                        <div className='ProjectContainer'>
+                            <div className='ProjectContainerImage'>
+                                {/* <img className="" src={Logo} alt="" /> */}
+                            </div>
+                            <div className='ProjectContainerText'>text</div>
+                        </div>
+                        <div className='ProjectContainer'>
+                            <div className='ProjectContainerImage'>
+                                {/* <img className="" src={Logo} alt="" /> */}
+                            </div>
+                            <div className='ProjectContainerText'>text</div>
+                        </div>
                     </div>
                 </div>
             </div>

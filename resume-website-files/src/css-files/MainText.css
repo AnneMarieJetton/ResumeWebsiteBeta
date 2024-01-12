@@ -38,6 +38,19 @@
     font-size: 150px;
     margin-top: 12%;
     /* font-weight: bold; */
+    animation: FadeIn 0.5s linear 1.6s forwards;
+    opacity: 0;
+}
+
+@keyframes FadeIn {
+    0% {
+        transform: translateY(-10%);
+        opacity: 0;
+      }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .MainTextAnimation span{
@@ -76,6 +89,8 @@
     font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
     font-size: 50px;
     /* margin-top: 10px; */
+    animation: FadeIn 0.5s linear 2.2s forwards;
+    opacity: 0;
 }
 
 /* --------------------------------About---------------------------------- */
@@ -142,7 +157,74 @@
 }
 
 
+/* --------------------------------Projects---------------------------------- */
 
+.MainTextProjectsParent{
+    height: 100%;
+    padding-top: 5%;
+}
+
+.MainTextProjectsTitle{
+    margin-top: 10px;
+    color: white;
+    font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
+    font-size: 50px;
+}
+
+.MainTextProjectsBody{
+    color: white;
+    font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    display: flex; 
+    flex-direction: row;
+    background-color: transparent;
+    height: 65vh;
+    margin-top: 2%;
+}
+
+.MainTextProjectsBodyLeft, .MainTextProjectsBodyRight {
+    flex: 1;
+    display: flex; 
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.ProjectContainer {
+    flex: 1;
+    display: flex; 
+    flex-direction: row;
+    background-color: #080808;
+    border-radius: 10px;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    padding: 20px;
+}
+
+.ProjectContainerImage {
+    /* flex: 1; */
+    width: 20%;
+    background-color: transparent;
+    border: solid gray 1px;
+    border-radius: 10px;
+    margin-right: 5%;
+    overflow: hidden;
+}
+
+.ProjectContainerImage img {
+    width: 100%;
+    height: auto; 
+    max-width: 100%; 
+    max-height: 100%;
+}
+
+.ProjectContainerText {
+    /* flex: 1; */
+    width: 75%;
+    background-color: transparent;
+    border-radius: 10px;
+    border: solid gray 1px;
+}
 
 /* --------------------------------Experience---------------------------------- */
 
@@ -153,7 +235,6 @@
 
 .MainTextExperienceTitle{
     margin-top: 10px;
-    /* margin-bottom: 10%; */
     color: white;
     font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
     font-size: 50px;
@@ -164,8 +245,6 @@
     font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
     font-size: 20px;
     margin-top: 10px;
-    /* margin-bottom: 10%; */
-    /* margin-top: 1%; */
 }
 
 .MainTextExperienceBodySection1{
@@ -173,8 +252,8 @@
 }
 
 .MainTextExperienceBodyTitles{
-    display: flex; /* Use flexbox */
-    flex-direction: row; /* Children will be in a row */
+    display: flex; 
+    flex-direction: row; 
 
 }
 
@@ -207,12 +286,10 @@
 .MainTextContactParent{
     height: 100%;
     padding-top: 5%;
-    /* padding-bottom: 10%; */
 }
 
 .MainTextContactTitle{
     margin-top: 10px;
-    /* margin-bottom: 10%; */
     color: white;
     font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
     font-size: 50px;
@@ -225,7 +302,6 @@
     margin-top: 10px;
     display: flex;
     flex-direction: row;
-    /* margin-top: 100px; */
 }
 
 .MainTextEmailParent{
@@ -234,7 +310,6 @@
     border: 2px solid white;
     border-radius: 8px;
     margin-right: 50px;
-    /* width: 50vw; */
     height: 65vh;
     display: flex;
     flex-direction: column;
@@ -255,11 +330,11 @@
     padding: 4px;
     display: flex;
     flex-direction: column;
-    height: 100%; /* Ensure the container takes up full height */
+    height: 100%; 
 }
 
 .EmailInputLabel {
-    flex: 0 0 auto; /* Don't grow, don't shrink, stay the initial size */
+    flex: 0 0 auto; 
 }
 
 .EmailInput{
@@ -274,8 +349,8 @@
 }
 
 .ContentInput{
-    flex: 1; /* Take up remaining vertical space */
-    width: 100%; /* Take up full width */
+    flex: 1; 
+    width: 100%; 
     background-color: transparent;
     font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
     font-size: 16px;
@@ -286,15 +361,15 @@
 }
 
 .ContentInput::-webkit-scrollbar {
-    width: 12px; /* Set the width of the scrollbar */
+    width: 12px; 
 }
 
 .ContentInput::-webkit-scrollbar-thumb {
-    background-color: #0e0e0e; /* Make the thumb transparent */
+    background-color: #0e0e0e; 
 }
 
 .ContentInput::-webkit-scrollbar-track {
-    background-color: black; /* Make the track transparent */
+    background-color: black;
 }
 
 .EmailInput::placeholder {
@@ -304,9 +379,9 @@
 button {
     margin-top: 10px;
     background-color: transparent;
-    border: 2px solid white; /* White border for the button */
+    border: 2px solid white;
     color: white;
-    padding: 8px 16px; /* Adjust padding as needed */
+    padding: 8px 16px; 
     border-radius: 4px;
     cursor: pointer;
     margin: 5px;
@@ -317,5 +392,5 @@ button {
   
   button:hover {
     background-color: white;
-    color: black; /* Change text color on hover if needed */
+    color: black; 
   }
