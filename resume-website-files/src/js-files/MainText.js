@@ -141,7 +141,10 @@ const MainText = () => {
                             <div className='ProjectContainerImage'>
                                 <img className="" src={VueLogo} alt="VueLogo" />
                             </div>
-                            <div className='ProjectContainerText'>text</div>
+                            <div className='ProjectContainerText'>
+                                <span className='ProjectContainerTextTitle'>Vue Project</span>
+                                <span className='ProjectContainerTextBody'></span>
+                            </div>
                         </div>
                         <div className='ProjectContainer'>
                             <div className='ProjectContainerImage'>
