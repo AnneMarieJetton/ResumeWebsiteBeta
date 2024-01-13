@@ -27,7 +27,7 @@
 /* --------------------------------Title---------------------------------- */
 
 .MainTextTitleParent{
-    height: 100%;
+    min-height: 100%;
     /* margin-top: 22%; */
     padding-top: 10%;
 }
@@ -96,7 +96,7 @@
 /* --------------------------------About---------------------------------- */
 
 .MainTextAboutParent{
-    height: 100%;
+    min-height: 100%;
     padding-top: 5%;
     /* position: relative; */
 }
@@ -113,14 +113,74 @@
     color:#cecece;
     font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 40px;
     /* margin-bottom: 10%; */
+}
+
+.MainTextAboutBodyCardsParent{
+    /* background-color: red; */
+    display: flex; 
+    flex-direction: row;
+}
+
+.MainTextAboutBodyCardColumn{
+    flex: 1;
+    display: flex; 
+    flex-direction: column;
+    /* background-color: purple; */
+}
+
+.MainTextAboutBodyCardParent {
+    flex: 1;
+    background-color: #080808;
+    border-radius: 10px;
+    margin: 10px;
+    aspect-ratio: 1;
+    height: auto;
+    position: relative;
+}
+
+.MainTextAboutBodyCard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style:preserve-3d;
+    transition: all 0.5s ease;
+    background: yellow;
+}
+
+.MainTextAboutBodyCard:hover {
+    transform:rotateY(180deg);
+}
+
+.MainTextAboutBodyCardFront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #ffc728;
+    color: #333;
+}
+
+.MainTextAboutBodyCardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #fafafa;
+    color: #333;
+    transform: rotateY(180deg);
+}
+
+.MainTextAboutBodyCardChosenCard {
+    /* background-color: #969696;
+    color: #080808; */
 }
 
 /* --------------------------------Skills---------------------------------- */
 
 .MainTextSkillsParent{
-    height: 100%;
+    min-height: 100%;
     padding-top: 5%;
 }
 
@@ -136,11 +196,11 @@
     color: white;
     font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 40px;
     /* margin-bottom: 10%; */
     display: flex; /* Use flexbox */
     flex-direction: row; /* Children will be in a row */
-    margin-top: 1%;
+    /* margin-top: 1%; */
 }
 
 .MainTextSkillsBodyRight,
@@ -160,7 +220,7 @@
 /* --------------------------------Projects---------------------------------- */
 
 .MainTextProjectsParent{
-    height: 100%;
+    min-height: 100%;
     padding-top: 5%;
 }
 
@@ -175,12 +235,12 @@
     color: white;
     font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 40px;
     display: flex; 
     flex-direction: row;
     background-color: transparent;
     height: 65vh;
-    margin-top: 2%;
+    /* margin-top: 2%; */
 }
 
 .MainTextProjectsBodyLeft, .MainTextProjectsBodyRight {
@@ -190,46 +250,99 @@
     background-color: transparent;
 }
 
+.MainTextProjectsBodyLeft{
+    margin-right: 40px;
+}
+
 .ProjectContainer {
     flex: 1;
     display: flex; 
     flex-direction: row;
     background-color: #080808;
     border-radius: 10px;
-    margin-right: 5%;
-    margin-bottom: 5%;
+    /* margin-right: 40px; */
+    margin-bottom: 40px;
     padding: 20px;
+    min-height: 140px;
 }
 
 .ProjectContainerImage {
-    /* flex: 1; */
     width: 20%;
+    height: 100%;
     background-color: transparent;
-    border: solid gray 1px;
+    /* border: solid gray 1px; */
     border-radius: 10px;
     margin-right: 5%;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ProjectContainerImage img {
     width: 100%;
     height: auto; 
+    /* height: 100%; */
     max-width: 100%; 
     max-height: 100%;
 }
 
 .ProjectContainerText {
-    /* flex: 1; */
+    position: relative;
     width: 75%;
     background-color: transparent;
     border-radius: 10px;
-    border: solid gray 1px;
+    /* border: solid gray 1px; */
+}
+
+.ProjectContainerTextList{
+    /* padding-left: 20px; */
+    /* margin-top: 4px; */
+}
+
+.ProjectContainerTextList li {
+    margin: 2px;
+    font-size: 18px;
+}
+
+.github__project__link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* margin: 10px; Adjust the margin as needed */
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    overflow: hidden;
+    /* z-index: 3; */
+    /* border-radius: 4px; */
+}
+
+.github__project__link:hover {
+    /* background-color: #272727; */
+    opacity: 0.3;
+}
+
+/* .github__project__link__pink{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    z-index: 3;
+} */
+
+.github__project__link img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* --------------------------------Experience---------------------------------- */
 
 .MainTextExperienceParent{
-    height: 100%;
+    min-height: 100%;
     padding-top: 5%;
 }
 
@@ -244,11 +357,18 @@
     color: white;
     font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 40px;
+    display: flex; 
+    flex-direction: column;
+    position: relative;
 }
 
-.MainTextExperienceBodySection1{
-
+.MainTextExperienceBodySection{
+    background-color: #080808;
+    border-radius: 10px;
+    margin-bottom: 40px; /* Set bottom margin as a percentage of the parent height */
+    position: relative;
+    padding: 20px;
 }
 
 .MainTextExperienceBodyTitles{
@@ -284,7 +404,7 @@
 /* --------------------------------Contact---------------------------------- */
 
 .MainTextContactParent{
-    height: 100%;
+    min-height: 100%;
     padding-top: 5%;
 }
 
@@ -299,7 +419,7 @@
     color: white;
     font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
 }
@@ -307,12 +427,14 @@
 .MainTextEmailParent{
     flex: 1;
     position: relative;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     border-radius: 8px;
     margin-right: 50px;
     height: 65vh;
     display: flex;
     flex-direction: column;
+    background-color: #080808;
+    /* background-color: transparent; */
 }
 
 .MainTextContactMessage{
@@ -320,13 +442,22 @@
 }
 
 .MainTextEmailDestinationInput{
-    border-bottom: 2px solid white;
+    background-color: black;
+    /* border-bottom: 2px solid white; */
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
     padding: 4px;
     display: flex;
     flex-direction: row;
 }
 
 .MainTextEmailContentInput{
+    background-color: black;
+    margin: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
     padding: 4px;
     display: flex;
     flex-direction: column;
@@ -379,18 +510,19 @@
 button {
     margin-top: 10px;
     background-color: transparent;
-    border: 2px solid white;
-    color: white;
+    border: 2px solid #969696;
+    color: #969696;
     padding: 8px 16px; 
     border-radius: 4px;
     cursor: pointer;
     margin: 5px;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 5px;
+    right: 5px;
   }
   
   button:hover {
     background-color: white;
+    border: 2px solid white;
     color: black; 
   }

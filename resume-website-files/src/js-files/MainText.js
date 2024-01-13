@@ -3,12 +3,15 @@ import React, { useEffect, useState } from 'react';
 import Moon from './Moon';
 import Asteroid from './Asteroid';
 
-// import ReactLogo from '../other-files/react_white_logo.png';
+import ReactLogo from '../other-files/react_white_logo.png';
 import VueLogo from '../other-files/vue_white_logo.png';
-// import CLogo from '../other-files/c_white_logo.png';
-// import SQLLogo from '../other-files/SQL_white_logo.png';
-// import JavaLogo from '../other-files/java_white_logo.png';
-// import PythonLogo from '../other-files/python_white_logo.png';
+import CppLogo from '../other-files/cpp_white_logo.png';
+import SQLLogo from '../other-files/sql_white_logo.png';
+import JavaLogo from '../other-files/java_white_logo.png';
+import PythonLogo from '../other-files/python_white_logo.png';
+
+import githubLogo from '../other-files/github_white_logo.png'
+// import githubLogoPink from '../other-files/github_pink_logo.png'
 
 const MainText = () => {
 
@@ -73,9 +76,91 @@ const MainText = () => {
                         <li>more stuff</li>
                         <li>even more stuff</li>
                     </ul> */}
-                    Hey there! Im a software developer born and raised in Orlando, Florida. My Hobbies include Painting, Hiking, and BLANK.
+                    {/* Hey there! Im a software developer born and raised in Orlando, Florida. My Hobbies include Painting, Hiking, and BLANK.
                     I am also a cat enthusiest, owning a mischevious and sporatic cat named Sir Arthur.<br /><br /> 
-                    My most recent personal coding project, and the one I am most excited about, is BLANK (link found below), where I discover <br />the best and most efficient ways to annoy a user.<br />
+                    My most recent personal coding project, and the one I am most excited about, is BLANK (link found below), where I discover <br />the best and most efficient ways to annoy a user.<br /> */}
+                    <div className='MainTextAboutBodyCardsParent'>
+                        <div className='MainTextAboutBodyCardColumn'>
+                            <div className='MainTextAboutBodyCardParent '>
+                                <div className='MainTextAboutBodyCard'>
+                                    <div className='MainTextAboutBodyCardFront'>side1</div>
+                                    <div className='MainTextAboutBodyCardBack'>side2</div>
+                                </div>
+                            </div>
+                            <div className='MainTextAboutBodyCardParent MainTextAboutBodyCardChosenCard'>
+                                hiya
+                            </div>
+                            <div className='MainTextAboutBodyCardParent'>
+                                hiya
+                            </div>
+                        </div>
+                        <div className='MainTextAboutBodyCardColumn'>
+                            <div className='MainTextAboutBodyCardParent MainTextAboutBodyCardChosenCard'>
+                                hiya
+                            </div>
+                            <div className='MainTextAboutBodyCardParent'>
+                                hiya
+                            </div>
+                            <div className='MainTextAboutBodyCardParent'>
+                                hiya
+                            </div>
+                        </div>
+                        <div className='MainTextAboutBodyCardColumn'>
+                            <div className='MainTextAboutBodyCardParent'>
+                                hiya
+                            </div>
+                            <div className='MainTextAboutBodyCardParent'>
+                                hiya
+                            </div>
+                            <div className='MainTextAboutBodyCardParent MainTextAboutBodyCardChosenCard'>
+                                hiya
+                            </div>
+                        </div>
+                        <div className='MainTextAboutBodyCardColumn'>
+                            <div className='MainTextAboutBodyCardParent MainTextAboutBodyCardChosenCard'>
+                                hiya
+                            </div>
+                            <div className='MainTextAboutBodyCardParent'>
+                                hiya
+                            </div>
+                            <div className='MainTextAboutBodyCardParent'>
+                                hiya
+                            </div>
+                        </div>
+                        <div className='MainTextAboutBodyCardColumn'>
+                            <div className='MainTextAboutBodyCardParent'>
+                                hiya
+                            </div>
+                            <div className='MainTextAboutBodyCardParent'>
+                                hiya
+                            </div>
+                            <div className='MainTextAboutBodyCardParent'>
+                                hiya
+                            </div>
+                        </div>
+                        <div className='MainTextAboutBodyCardColumn'>
+                            <div className='MainTextAboutBodyCardParent'>
+                                hiya
+                            </div>
+                            <div className='MainTextAboutBodyCardParent'>
+                                hiya
+                            </div>
+                            <div className='MainTextAboutBodyCardParent MainTextAboutBodyCardChosenCard'>
+                                hiya
+                            </div>
+                        </div>
+                        <div className='MainTextAboutBodyCardColumn'>
+                            <div className='MainTextAboutBodyCardParent'>
+                                hiya
+                            </div>
+                            <div className='MainTextAboutBodyCardParent MainTextAboutBodyCardChosenCard'>
+                                hiya
+                            </div>
+                            <div className='MainTextAboutBodyCardParent'>
+                                hiya
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 {/* <Asteroid size={0.5} startingAngle={Math.PI / 4} placementX={30} placementY={45}/> */}
             </div>
@@ -143,40 +228,169 @@ const MainText = () => {
                             </div>
                             <div className='ProjectContainerText'>
                                 <span className='ProjectContainerTextTitle'>Vue Project</span>
-                                <span className='ProjectContainerTextBody'></span>
+                                <ul className='ProjectContainerTextList'>
+                                    <li>
+                                        What the project is
+                                    </li>
+                                    <li>
+                                        bla
+                                    </li>
+                                    <li>
+                                        bla
+                                    </li>
+                                    <li>
+                                        Proof of Vue Knowledge
+                                    </li>
+                                </ul>
+                                {/* <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
+                                    <img src={githubLogoPink} alt="GitHub" />
+                                </a> */}
+                                <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
+                                    <img src={githubLogo} alt="GitHub" />
+                                </a>
                             </div>
                         </div>
                         <div className='ProjectContainer'>
                             <div className='ProjectContainerImage'>
-                                {/* <img className="" src={Logo} alt="" /> */}
+                                <img className="" src={CppLogo} alt="CppLogo" />
                             </div>
-                            <div className='ProjectContainerText'>text</div>
+                            <div className='ProjectContainerText'>
+                                <span className='ProjectContainerTextTitle'>C++ Project</span>
+                                <ul className='ProjectContainerTextList'>
+                                    <li>
+                                        What the project is
+                                    </li>
+                                    <li>
+                                        bla
+                                    </li>
+                                    <li>
+                                        bla
+                                    </li>
+                                    <li>
+                                        Proof of C++ Knowledge
+                                    </li>
+                                </ul>
+                                {/* <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
+                                    <img src={githubLogoPink} alt="GitHub" />
+                                </a> */}
+                                <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
+                                    <img src={githubLogo} alt="GitHub" />
+                                </a>
+                            </div>
                         </div>
                         <div className='ProjectContainer'>
                             <div className='ProjectContainerImage'>
-                                {/* <img className="" src={Logo} alt="" /> */}
+                                <img className="" src={SQLLogo} alt="SQLLogo" />
                             </div>
-                            <div className='ProjectContainerText'>text</div>
+                            <div className='ProjectContainerText'>
+                                <span className='ProjectContainerTextTitle'>SQL Project</span>
+                                <ul className='ProjectContainerTextList'>
+                                    <li>
+                                        What the project is
+                                    </li>
+                                    <li>
+                                        bla
+                                    </li>
+                                    <li>
+                                        bla
+                                    </li>
+                                    <li>
+                                        Proof of SQL Knowledge
+                                    </li>
+                                </ul>
+                                {/* <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
+                                    <img src={githubLogoPink} alt="GitHub" />
+                                </a> */}
+                                <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
+                                    <img src={githubLogo} alt="GitHub" />
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div className='MainTextProjectsBodyRight'>
                         <div className='ProjectContainer'>
                             <div className='ProjectContainerImage'>
-                                {/* <img className="" src={Logo} alt="" /> */}
+                                <img className="" src={JavaLogo} alt="JavaLogo" />
                             </div>
-                            <div className='ProjectContainerText'>text</div>
+                            <div className='ProjectContainerText'>
+                                <span className='ProjectContainerTextTitle'>Java Project</span>
+                                <ul className='ProjectContainerTextList'>
+                                    <li>
+                                        What the project is
+                                    </li>
+                                    <li>
+                                        bla
+                                    </li>
+                                    <li>
+                                        bla
+                                    </li>
+                                    <li>
+                                        Proof of Java Knowledge
+                                    </li>
+                                </ul>
+                                {/* <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
+                                    <img src={githubLogoPink} alt="GitHub" />
+                                </a> */}
+                                <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
+                                    <img src={githubLogo} alt="GitHub" />
+                                </a>
+                            </div>
                         </div>
                         <div className='ProjectContainer'>
                             <div className='ProjectContainerImage'>
-                                {/* <img className="" src={Logo} alt="" /> */}
+                                <img className="" src={PythonLogo} alt="PythonLogo" />
                             </div>
-                            <div className='ProjectContainerText'>text</div>
+                            <div className='ProjectContainerText'>
+                                <span className='ProjectContainerTextTitle'>Python Project</span>
+                                <ul className='ProjectContainerTextList'>
+                                    <li>
+                                        What the project is
+                                    </li>
+                                    <li>
+                                        bla
+                                    </li>
+                                    <li>
+                                        bla
+                                    </li>
+                                    <li>
+                                        Proof of Python Knowledge
+                                    </li>
+                                </ul>
+                                {/* <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
+                                    <img src={githubLogoPink} alt="GitHub" />
+                                </a> */}
+                                <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
+                                    <img src={githubLogo} alt="GitHub" />
+                                </a>
+                            </div>
                         </div>
                         <div className='ProjectContainer'>
                             <div className='ProjectContainerImage'>
-                                {/* <img className="" src={Logo} alt="" /> */}
+                                <img className="" src={ReactLogo} alt="ReactLogo" />
                             </div>
-                            <div className='ProjectContainerText'>text</div>
+                            <div className='ProjectContainerText'>
+                                <span className='ProjectContainerTextTitle'>React Project</span>
+                                <ul className='ProjectContainerTextList'>
+                                    <li>
+                                        What the project is
+                                    </li>
+                                    <li>
+                                        bla
+                                    </li>
+                                    <li>
+                                        bla
+                                    </li>
+                                    <li>
+                                        Proof of React Knowledge
+                                    </li>
+                                </ul>
+                                {/* <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
+                                    <img src={githubLogoPink} alt="GitHub" />
+                                </a> */}
+                                <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
+                                    <img src={githubLogo} alt="GitHub" />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -197,7 +411,7 @@ const MainText = () => {
                     {/* Experience */}
                 </div>
                 <div className='MainTextExperienceBody'>
-                    <div className='MainTextExperienceBodySection1'>
+                    <div className='MainTextExperienceBodySection'>
                         <div className='MainTextExperienceBodyTitles'>
                             <span className='MainTextExperienceBodyCompanyName'>company name</span>
                             <span className='MainTextExperienceBodyDate'>March 2023 - Current</span>
@@ -211,7 +425,7 @@ const MainText = () => {
                             <li>Assisted in upgrading storage system and setting up SQL system</li>
                         </ul>
                     </div>
-                    <div className='MainTextExperienceBodySection2'>
+                    <div className='MainTextExperienceBodySection'>
                         <div className='MainTextExperienceBodyTitles'>
                             <span className='MainTextExperienceBodyCompanyName'>Cubic Transportation Systems</span>
                             <span className='MainTextExperienceBodyDate'>March 2022 - March 2023</span>
@@ -225,7 +439,7 @@ const MainText = () => {
                             <li>Upgraded pre-existing high level software</li>
                         </ul>
                     </div>
-                    <div className='MainTextExperienceBodySection3'>
+                    <div className='MainTextExperienceBodySection'>
                         <div className='MainTextExperienceBodyTitles'>
                             <span className='MainTextExperienceBodyCompanyName'>Utah State University</span>
                             <span className='MainTextExperienceBodyDate'>August 2018 - March 2022</span>
