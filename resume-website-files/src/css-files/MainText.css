@@ -132,7 +132,7 @@
 
 .MainTextAboutBodyCardParent {
     flex: 1;
-    background-color: #080808;
+    /* background-color: #080808; */
     border-radius: 10px;
     margin: 10px;
     aspect-ratio: 1;
@@ -146,7 +146,13 @@
     height: 100%;
     transform-style:preserve-3d;
     transition: all 0.5s ease;
-    background: yellow;
+    /* background: yellow; */
+}
+
+.MainTextAboutBodyCardFixed {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .MainTextAboutBodyCard:hover {
@@ -158,7 +164,7 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    background: #ffc728;
+    background: #080808;
     color: #333;
 }
 
@@ -167,14 +173,39 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    background: #fafafa;
+    background: #969696;
     color: #333;
     transform: rotateY(180deg);
+    /* margin: 10px; */
+}
+
+.MainTextAboutBodyCardBackText {
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.noFlip {
+    transform: none;
 }
 
 .MainTextAboutBodyCardChosenCard {
-    /* background-color: #969696;
-    color: #080808; */
+    position: absolute;
+    /* width: 100%;
+    height: 100%; */
+    /* backface-visibility: hidden; */
+    background: #969696;
+    color: #333;
+    /* transform: rotateY(180deg); */
+    width: 80%;
+    height: 80%;
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* --------------------------------Skills---------------------------------- */
@@ -205,16 +236,60 @@
 
 .MainTextSkillsBodyRight,
 .MainTextSkillsBodyLeft {
-    /* flex: 1; */
+    flex: 1;
+    display: flex; /* Use flexbox */
+    flex-direction: column;
 }
 
 .MainTextSkillsBodyRight {
-    margin-left: 10%;
+    /* margin-left: 10%; */
 }
 
-.MainTextSkillsBodyList{
+.MainTextLanguagesSubtitle, .MainTextToolsSubtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+/* .MainTextSkillsBodyList{
     color:#cecece;
 }
+
+.MainTextSkillsBodyList li{
+    margin-top: 5%;
+} */
+
+.MainTextSkillsBodyLeft span, .MainTextSkillsBodyRight span{
+    color:#cecece;
+    flex: 1;
+    position: relative;
+}
+
+.AstronaughtParent {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Astronaught {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    animation: floatAnimation 3s infinite alternate ease-in-out;
+}
+
+@keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px); /* Adjust the value to control the floating range */
+    }
+  }
 
 
 /* --------------------------------Projects---------------------------------- */

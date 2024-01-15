@@ -2,6 +2,7 @@ import '../css-files/MainText.css';
 import React, { useEffect, useState } from 'react';
 import Moon from './Moon';
 import Asteroid from './Asteroid';
+import Astronaught from '../other-files/true_astronaught_2_transparent.png';
 
 import ReactLogo from '../other-files/react_white_logo.png';
 import VueLogo from '../other-files/vue_white_logo.png';
@@ -83,81 +84,195 @@ const MainText = () => {
                         <div className='MainTextAboutBodyCardColumn'>
                             <div className='MainTextAboutBodyCardParent '>
                                 <div className='MainTextAboutBodyCard'>
-                                    <div className='MainTextAboutBodyCardFront'>side1</div>
-                                    <div className='MainTextAboutBodyCardBack'>side2</div>
+                                    <div className='MainTextAboutBodyCardFront'></div>
+                                    <div className='MainTextAboutBodyCardBack'>
+                                        <div className="MainTextAboutBodyCardBackText">
+                                            text
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div className='MainTextAboutBodyCardParent MainTextAboutBodyCardChosenCard'>
-                                hiya
+                            <div className='MainTextAboutBodyCardParent'>
+                                <div className='MainTextAboutBodyCardFixed'>
+                                    <div className='MainTextAboutBodyCardChosenCard'>CHOSEN</div>
+                                </div>
                             </div>
                             <div className='MainTextAboutBodyCardParent'>
-                                hiya
-                            </div>
-                        </div>
-                        <div className='MainTextAboutBodyCardColumn'>
-                            <div className='MainTextAboutBodyCardParent MainTextAboutBodyCardChosenCard'>
-                                hiya
-                            </div>
-                            <div className='MainTextAboutBodyCardParent'>
-                                hiya
-                            </div>
-                            <div className='MainTextAboutBodyCardParent'>
-                                hiya
-                            </div>
-                        </div>
-                        <div className='MainTextAboutBodyCardColumn'>
-                            <div className='MainTextAboutBodyCardParent'>
-                                hiya
-                            </div>
-                            <div className='MainTextAboutBodyCardParent'>
-                                hiya
-                            </div>
-                            <div className='MainTextAboutBodyCardParent MainTextAboutBodyCardChosenCard'>
-                                hiya
-                            </div>
-                        </div>
-                        <div className='MainTextAboutBodyCardColumn'>
-                            <div className='MainTextAboutBodyCardParent MainTextAboutBodyCardChosenCard'>
-                                hiya
-                            </div>
-                            <div className='MainTextAboutBodyCardParent'>
-                                hiya
-                            </div>
-                            <div className='MainTextAboutBodyCardParent'>
-                                hiya
+                                <div className='MainTextAboutBodyCard'>
+                                    <div className='MainTextAboutBodyCardFront'></div>
+                                    <div className='MainTextAboutBodyCardBack'>
+                                        <div className="MainTextAboutBodyCardBackText">
+                                            text
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div className='MainTextAboutBodyCardColumn'>
                             <div className='MainTextAboutBodyCardParent'>
-                                hiya
+                                <div className='MainTextAboutBodyCardFixed'>
+                                    <div className='MainTextAboutBodyCardChosenCard'>CHOSEN</div>
+                                </div>
                             </div>
                             <div className='MainTextAboutBodyCardParent'>
-                                hiya
+                                <div className='MainTextAboutBodyCard'>
+                                    <div className='MainTextAboutBodyCardFront'></div>
+                                    <div className='MainTextAboutBodyCardBack'>
+                                        <div className="MainTextAboutBodyCardBackText">
+                                            text
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div className='MainTextAboutBodyCardParent'>
-                                hiya
+                                <div className='MainTextAboutBodyCard'>
+                                    <div className='MainTextAboutBodyCardFront'></div>
+                                    <div className='MainTextAboutBodyCardBack'>
+                                        <div className="MainTextAboutBodyCardBackText">
+                                            text
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div className='MainTextAboutBodyCardColumn'>
                             <div className='MainTextAboutBodyCardParent'>
-                                hiya
+                                <div className='MainTextAboutBodyCard'>
+                                    <div className='MainTextAboutBodyCardFront'></div>
+                                    <div className='MainTextAboutBodyCardBack'>
+                                        <div className="MainTextAboutBodyCardBackText">
+                                            text
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div className='MainTextAboutBodyCardParent'>
-                                hiya
+                                <div className='MainTextAboutBodyCard'>
+                                    <div className='MainTextAboutBodyCardFront'></div>
+                                    <div className='MainTextAboutBodyCardBack'>
+                                        <div className="MainTextAboutBodyCardBackText">
+                                            text
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div className='MainTextAboutBodyCardParent MainTextAboutBodyCardChosenCard'>
-                                hiya
+                            <div className='MainTextAboutBodyCardParent'>
+                                <div className='MainTextAboutBodyCardFixed'>
+                                    <div className='MainTextAboutBodyCardChosenCard'>CHOSEN</div>
+                                </div>
                             </div>
                         </div>
                         <div className='MainTextAboutBodyCardColumn'>
                             <div className='MainTextAboutBodyCardParent'>
-                                hiya
-                            </div>
-                            <div className='MainTextAboutBodyCardParent MainTextAboutBodyCardChosenCard'>
-                                hiya
+                                <div className='MainTextAboutBodyCardFixed'>
+                                    <div className='MainTextAboutBodyCardChosenCard'>CHOSEN</div>
+                                </div>
                             </div>
                             <div className='MainTextAboutBodyCardParent'>
-                                hiya
+                                <div className='MainTextAboutBodyCard'>
+                                    <div className='MainTextAboutBodyCardFront'></div>
+                                    <div className='MainTextAboutBodyCardBack'>
+                                        <div className="MainTextAboutBodyCardBackText">
+                                            text
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='MainTextAboutBodyCardParent'>
+                                <div className='MainTextAboutBodyCard'>
+                                    <div className='MainTextAboutBodyCardFront'></div>
+                                    <div className='MainTextAboutBodyCardBack'>
+                                        <div className="MainTextAboutBodyCardBackText">
+                                            text
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='MainTextAboutBodyCardColumn'>
+                            <div className='MainTextAboutBodyCardParent'>
+                                <div className='MainTextAboutBodyCard'>
+                                    <div className='MainTextAboutBodyCardFront'></div>
+                                    <div className='MainTextAboutBodyCardBack'>
+                                        <div className="MainTextAboutBodyCardBackText">
+                                            text
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='MainTextAboutBodyCardParent'>
+                                <div className='MainTextAboutBodyCard'>
+                                    <div className='MainTextAboutBodyCardFront'></div>
+                                    <div className='MainTextAboutBodyCardBack'>
+                                        <div className="MainTextAboutBodyCardBackText">
+                                            text
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='MainTextAboutBodyCardParent'>
+                                <div className='MainTextAboutBodyCard'>
+                                    <div className='MainTextAboutBodyCardFront'></div>
+                                    <div className='MainTextAboutBodyCardBack'>
+                                        <div className="MainTextAboutBodyCardBackText">
+                                            text
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='MainTextAboutBodyCardColumn'>
+                            <div className='MainTextAboutBodyCardParent'>
+                                <div className='MainTextAboutBodyCard'>
+                                    <div className='MainTextAboutBodyCardFront'></div>
+                                    <div className='MainTextAboutBodyCardBack'>
+                                        <div className="MainTextAboutBodyCardBackText">
+                                            text
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='MainTextAboutBodyCardParent'>
+                                <div className='MainTextAboutBodyCard'>
+                                    <div className='MainTextAboutBodyCardFront'></div>
+                                    <div className='MainTextAboutBodyCardBack'>
+                                        <div className="MainTextAboutBodyCardBackText">
+                                            text
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='MainTextAboutBodyCardParent'>
+                                <div className='MainTextAboutBodyCardFixed'>
+                                    <div className='MainTextAboutBodyCardChosenCard'>CHOSEN</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='MainTextAboutBodyCardColumn'>
+                            <div className='MainTextAboutBodyCardParent'>
+                                <div className='MainTextAboutBodyCard'>
+                                    <div className='MainTextAboutBodyCardFront'></div>
+                                    <div className='MainTextAboutBodyCardBack'>
+                                        <div className="MainTextAboutBodyCardBackText">
+                                            text
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='MainTextAboutBodyCardParent'>
+                                <div className='MainTextAboutBodyCardFixed'>
+                                    <div className='MainTextAboutBodyCardChosenCard'>CHOSEN</div>
+                                </div>
+                            </div>
+                            <div className='MainTextAboutBodyCardParent'>
+                                <div className='MainTextAboutBodyCard'>
+                                    <div className='MainTextAboutBodyCardFront'></div>
+                                    <div className='MainTextAboutBodyCardBack'>
+                                        <div className="MainTextAboutBodyCardBackText">
+                                            text
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -178,32 +293,31 @@ const MainText = () => {
                 <div className='MainTextSkillsBody'>
                     <div className='MainTextSkillsBodyLeft'>
                         <span className='MainTextLanguagesSubtitle'>Languages</span>
-                        <ul className='MainTextSkillsBodyList'>
-                            <li>Java</li>
-                            <li>Python</li>
-                            <li>C</li>
-                            <li>C++</li>
-                            <li>JavaScript</li>
-                            <li>CSS</li>
-                            <li>HTML</li>
-                        </ul>
+                        <span style={{ left: '13.33%' }}>Java</span>
+                        <span style={{ left: '33.33%' }}>Python</span>
+                        <span style={{ left: '83.33%' }}>C</span>
+                        <span style={{ left: '63.33%' }}>C++</span>
+                        <span style={{ left: '23.33%' }}>JavaScript</span>
+                        <span style={{ left: '73.33%' }}>CSS</span>
+                        <span style={{ left: '13.33%' }}>HTML</span>
+                    </div>
+                    <div className="AstronaughtParent">
+                        <img className="Astronaught" src={Astronaught} alt="astronaught" />
                     </div>
                     <div className='MainTextSkillsBodyRight'>
                         <span className='MainTextToolsSubtitle'>Tools</span>
-                        <ul className='MainTextSkillsBodyList'>
-                            <li>React.JS</li>
-                            <li>THREE.JS</li>
-                            <li>Vue</li>
-                            <li>SQL</li>
-                            <li>Jenkins</li>
-                            <li>Artifactory</li>
-                            <li>Git</li>
-                            <li>JIRA</li>
-                            <li>Firebase</li>
-                            <li>Stripe</li>
-                            <li>Pygame</li>
-                            <li>Postman</li>
-                        </ul>
+                        <span style={{ left: '73.33%' }}>React.JS</span>
+                        <span style={{ left: '33.33%' }}>THREE.JS</span>
+                        <span style={{ left: '83.33%' }}>Vue</span>
+                        <span style={{ left: '43.33%' }}>SQL</span>
+                        <span style={{ left: '63.33%' }}>Jenkins</span>
+                        <span style={{ left: '13.33%' }}>Artifactory</span>
+                        <span style={{ left: '43.33%' }}>Git</span>
+                        <span style={{ left: '73.33%' }}>JIRA</span>
+                        <span style={{ left: '53.33%' }}>Firebase</span>
+                        <span style={{ left: '83.33%' }}>Stripe</span>
+                        <span style={{ left: '33.33%' }}>Pygame</span>
+                        <span style={{ left: '23.33%' }}>Postman</span>
                     </div>
                 </div>
             </div>
