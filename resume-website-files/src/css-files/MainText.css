@@ -474,7 +474,28 @@
     margin-top: 0;
 }
 
+/* --------------------------------Education---------------------------------- */
 
+.MainTextEducationParent {
+    min-height: 100%;
+    padding-top: 5%;
+}
+
+.MainTextEducationTitle {
+    margin-top: 10px;
+    color: white;
+    font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
+    font-size: 50px;
+}
+
+.MainTextEducationBody {
+    color: white;
+    font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
+    font-size: 20px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
 
 /* --------------------------------Contact---------------------------------- */
 

@@ -44,13 +44,18 @@ function Header() {
                         <span>Experience</span>
                     </div>
                 </a>
-                <a className="header__link" onClick={() => scrollToElement('Contact')}>
+                <a className="header__link" onClick={() => scrollToElement('Education')}>
                     <div className="header__option header__anim__6">
+                        <span>Education</span>
+                    </div>
+                </a>
+                <a className="header__link" onClick={() => scrollToElement('Contact')}>
+                    <div className="header__option header__anim__7">
                         <span>Contact Me</span>
                     </div>
                 </a>
                 <div className="header__link">
-                    <div className="header__option header__anim__7">
+                    <div className="header__option header__anim__8">
                         <div className="social-links">
                             <a href="https://github.com/AnneMarieJetton" className="github__link" target="_blank" rel="noopener noreferrer">
                                 <img src={githubLogo} alt="GitHub" />

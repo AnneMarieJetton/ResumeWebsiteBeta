@@ -570,6 +570,24 @@ const MainText = () => {
                 </div>
             </div>
             
+            <div className='MainTextEducationParent' id="Education">
+                <div className='MainTextEducationTitle MainTextAnimation'>
+                    <span>E</span>
+                    <span>d</span>
+                    <span>u</span>
+                    <span>c</span>
+                    <span>a</span>
+                    <span>t</span>
+                    <span>i</span>
+                    <span>o</span>
+                    <span>n</span>
+                    {/*Education*/}
+                </div>
+                <div className='MainTextEducationBody'>
+                    elloooo
+                </div>
+            </div>
+
             <div className= 'MainTextContactParent' id="Contact">
                 <div className='MainTextContactTitle MainTextAnimation'>
                     <span>C</span>

@@ -172,6 +172,11 @@
     animation: slide 0.1s linear 1.6s forwards;
   }
 
+  .header__anim__8 {
+    opacity: 0;
+    animation: slide 0.1s linear 1.7s forwards;
+  }
+
   @keyframes slide {
     0% {
       /* transform: translateX(-100%); */
