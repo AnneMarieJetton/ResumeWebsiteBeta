@@ -239,6 +239,7 @@
     flex: 1;
     display: flex; /* Use flexbox */
     flex-direction: column;
+    position: relative;
 }
 
 .MainTextSkillsBodyRight {
@@ -246,9 +247,9 @@
 }
 
 .MainTextLanguagesSubtitle, .MainTextToolsSubtitle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
     margin-bottom: 40px;
     color: white;
     font-weight: bold;
@@ -265,7 +266,8 @@
 .MainTextSkillsBodyLeft span, .MainTextSkillsBodyRight span{
     color:#cecece;
     flex: 1;
-    position: relative;
+    /* position: relative; */
+    position: absolute;
 }
 
 .AstronaughtParent {
@@ -494,8 +496,92 @@
     font-size: 20px;
     margin-top: 40px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
+
+.MainTextEducationBodyRow1, .MainTextEducationBodyRow2 {
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+    /* padding-top: 5%; */
+}
+
+.MainTextEducationBodyRow2 {
+    padding-top: 5%;
+}
+
+
+.MainTextEducationBodyText1, .MainTextEducationBodyText2 {
+    width: 85%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    /* position: relative; */
+}
+
+.MainTextEducationBodyText1 {
+    margin-left: 5%;
+}
+
+.MainTextEducationBodyText2 {
+    margin-right: 5%;
+}
+
+.MainTextEducationBodyTextLeft, .MainTextEducationBodyTextRight {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* position: absolute;
+    right: 0; */
+}
+
+.MainTextEducationBodyTextLeft {
+    /* position: absolute;
+    right: 0; */
+}
+
+.MainTextEducationBodyTextRight {
+    /* position: absolute;
+    right: 0; */
+    /* justify-content: space-between; */
+    align-items: flex-end;
+}
+
+.MainTextEducationBodyTextSubtitle {
+    flex: 1;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.MainTextEducationBodyTextSubtitle2 {
+    flex: 1;
+    /* font-weight: bold; */
+    font-size: 14px;
+    color: #cecece;
+}
+
+.UFOParent{
+    width: 15%;
+    /* background-color: purple; */
+}
+
+.UFO {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    animation: floatAnimation 3s infinite alternate ease-in-out;
+}
+
+@keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px); /* Adjust the value to control the floating range */
+    }
+  }
 
 /* --------------------------------Contact---------------------------------- */
 
