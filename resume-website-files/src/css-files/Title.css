@@ -1,0 +1,66 @@
+.MainTextTitleParent{
+    min-height: 100%;
+    /* margin-top: 22%; */
+    padding-top: 10%;
+}
+
+.MainTextTitle{
+    color: white;
+    font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
+    font-size: 150px;
+    margin-top: 12%;
+    /* font-weight: bold; */
+    animation: FadeIn 0.5s linear 1.6s forwards;
+    opacity: 0;
+}
+
+@keyframes FadeIn {
+    0% {
+        transform: translateY(-10%);
+        opacity: 0;
+      }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.MainTextAnimation span{
+    display: inline-block;
+    transition:color 0.3S;
+}
+
+.MainTextAnimation span:hover {
+    color: #f700ff;
+}
+
+.MainTextTitleUnderscore {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    49% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    99% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.MainTextSubtitle{
+    color: white;
+    font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
+    font-size: 50px;
+    /* margin-top: 10px; */
+    animation: FadeIn 0.5s linear 2.2s forwards;
+    opacity: 0;
+}

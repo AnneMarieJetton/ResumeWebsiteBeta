@@ -1,0 +1,82 @@
+.MainTextSkillsParent{
+    min-height: 100%;
+    padding-top: 5%;
+}
+
+.MainTextSkillsTitle{
+    margin-top: 10px;
+    /* margin-bottom: 10%; */
+    color: white;
+    font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
+    font-size: 50px;
+}
+
+.MainTextSkillsBody{
+    color: white;
+    font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
+    font-size: 20px;
+    margin-top: 40px;
+    /* margin-bottom: 10%; */
+    display: flex; /* Use flexbox */
+    flex-direction: row; /* Children will be in a row */
+    /* margin-top: 1%; */
+}
+
+.MainTextSkillsBodyRight,
+.MainTextSkillsBodyLeft {
+    flex: 1;
+    display: flex; /* Use flexbox */
+    flex-direction: column;
+    position: relative;
+}
+
+.MainTextSkillsBodyRight {
+    /* margin-left: 10%; */
+}
+
+.MainTextLanguagesSubtitle, .MainTextToolsSubtitle{
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    margin-bottom: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+/* .MainTextSkillsBodyList{
+    color:#cecece;
+}
+
+.MainTextSkillsBodyList li{
+    margin-top: 5%;
+} */
+
+.MainTextSkillsBodyLeft span, .MainTextSkillsBodyRight span{
+    color:#cecece;
+    flex: 1;
+    /* position: relative; */
+    position: absolute;
+}
+
+.AstronaughtParent {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Astronaught {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    animation: floatAnimation 3s infinite alternate ease-in-out;
+}
+
+@keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px); /* Adjust the value to control the floating range */
+    }
+  }

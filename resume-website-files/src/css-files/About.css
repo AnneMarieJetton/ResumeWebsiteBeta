@@ -1,0 +1,112 @@
+.MainTextAboutParent{
+    min-height: 100%;
+    padding-top: 5%;
+    /* position: relative; */
+}
+
+.MainTextAboutTitle{
+    margin-top: 10px;
+    /* margin-bottom: 10%; */
+    color: white;
+    font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
+    font-size: 50px;
+}
+
+.MainTextAboutBody{
+    color:#cecece;
+    font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
+    font-size: 20px;
+    margin-top: 40px;
+    /* margin-bottom: 10%; */
+}
+
+.MainTextAboutBodyCardsParent{
+    /* background-color: red; */
+    display: flex; 
+    flex-direction: row;
+}
+
+.MainTextAboutBodyCardColumn{
+    flex: 1;
+    display: flex; 
+    flex-direction: column;
+    /* background-color: purple; */
+}
+
+.MainTextAboutBodyCardParent {
+    flex: 1;
+    /* background-color: #080808; */
+    border-radius: 10px;
+    margin: 10px;
+    aspect-ratio: 1;
+    height: auto;
+    position: relative;
+}
+
+.MainTextAboutBodyCard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style:preserve-3d;
+    transition: all 0.5s ease;
+    /* background: yellow; */
+}
+
+.MainTextAboutBodyCardFixed {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.MainTextAboutBodyCard:hover {
+    transform:rotateY(180deg);
+}
+
+.MainTextAboutBodyCardFront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #080808;
+    color: #333;
+}
+
+.MainTextAboutBodyCardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #969696;
+    color: #333;
+    transform: rotateY(180deg);
+    /* margin: 10px; */
+}
+
+.MainTextAboutBodyCardBackText {
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.noFlip {
+    transform: none;
+}
+
+.MainTextAboutBodyCardChosenCard {
+    position: absolute;
+    /* width: 100%;
+    height: 100%; */
+    /* backface-visibility: hidden; */
+    background: #969696;
+    color: #333;
+    /* transform: rotateY(180deg); */
+    width: 80%;
+    height: 80%;
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

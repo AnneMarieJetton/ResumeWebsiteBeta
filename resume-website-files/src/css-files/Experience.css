@@ -1,0 +1,57 @@
+.MainTextExperienceParent{
+    min-height: 100%;
+    padding-top: 5%;
+}
+
+.MainTextExperienceTitle{
+    margin-top: 10px;
+    color: white;
+    font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
+    font-size: 50px;
+}
+
+.MainTextExperienceBody{
+    color: white;
+    font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
+    font-size: 20px;
+    margin-top: 40px;
+    display: flex; 
+    flex-direction: column;
+    position: relative;
+}
+
+.MainTextExperienceBodySection{
+    background-color: #080808;
+    border-radius: 10px;
+    margin-bottom: 40px; /* Set bottom margin as a percentage of the parent height */
+    position: relative;
+    padding: 20px;
+}
+
+.MainTextExperienceBodyTitles{
+    display: flex; 
+    flex-direction: row; 
+
+}
+
+.MainTextExperienceBodyCompanyName, .MainTextExperienceBodyDate{
+    flex: 1;
+    font-weight: bold;
+}
+
+.MainTextExperienceBodyJobTitle{
+    font-weight: bold;
+}
+
+.MainTextExperienceBodyJobDescription{
+    color:#cecece;
+}
+
+.MainTextExperienceBodyRespAndAcom{
+    font-weight: bold;
+}
+
+.MainTextExperienceBodyRespAndAcomList{
+    color:#cecece;
+    margin-top: 0;
+}

@@ -1,4 +1,13 @@
 import '../css-files/MainText.css';
+
+import Title from './Title';
+import About from './About';
+import Skills from './Skills';
+import Projects from './Projects';
+import Experience from './Experience';
+import Education from './Education';
+import Contact from './Contact';
+
 import React, { useEffect, useState } from 'react';
 import Moon from './Moon';
 import Asteroid from './Asteroid';
@@ -29,22 +38,22 @@ const MainText = () => {
 
     //-----------------email logic----------------------------------
 
-    const [email, setEmail] = useState('');
-    const [emailContent, setEmailContent] = useState('');
+    // const [email, setEmail] = useState('');
+    // const [emailContent, setEmailContent] = useState('');
 
-    const handleEmailChange = (event) => {
-        setEmail(event.target.value);
-    };
+    // const handleEmailChange = (event) => {
+    //     setEmail(event.target.value);
+    // };
 
-    const handleContentChange = (event) => {
-        setEmailContent(event.target.value);
-    };
+    // const handleContentChange = (event) => {
+    //     setEmailContent(event.target.value);
+    // };
 
-    const handleSendEmail = () => {
-        // Implement the logic to send the email using the 'email' and 'emailContent' states
-        console.log('Sending email:', email);
-        console.log('Email content:', emailContent);
-    };
+    // const handleSendEmail = () => {
+    //     // Implement the logic to send the email using the 'email' and 'emailContent' states
+    //     console.log('Sending email:', email);
+    //     console.log('Email content:', emailContent);
+    // };
 
     //-----------------Laser logic----------------------------------
 
@@ -68,7 +77,7 @@ const MainText = () => {
     return(
         <div className='MainTextParent'>
 
-            <div className= 'MainTextTitleParent' id="Home">
+            {/* <div className= 'MainTextTitleParent' id="Home">
                 <div className='MainTextTitleLeft'>
                     <div className='MainTextTitle MainTextAnimation'>
                         <span>H</span>
@@ -77,7 +86,6 @@ const MainText = () => {
                         <span>l</span>
                         <span>o</span>
                         <span className='MainTextTitleUnderscore'>_</span>
-                        {/* Hello. */}
                     </div>
                     <div className='MainTextSubtitle MainTextAnimation'>
                         <span>I</span>
@@ -88,30 +96,21 @@ const MainText = () => {
                         <span>n</span>
                         <span>n</span>
                         <span>e</span>
-                        {/* I'm Anne */}
                     </div>
                 </div>
                 <Moon/>
-            </div>
+            </div> */}
+            <Title/>
 
-            <div className= 'MainTextAboutParent' id="About">
+            {/* <div className= 'MainTextAboutParent' id="About">
                 <div className='MainTextAboutTitle MainTextAnimation'>
                     <span>A</span>
                     <span>b</span>
                     <span>o</span>
                     <span>u</span>
                     <span>t</span>
-                    {/* Skills */}
                 </div>
                 <div className='MainTextAboutBody'>
-                    {/* <ul>
-                        <li>stuff</li>
-                        <li>more stuff</li>
-                        <li>even more stuff</li>
-                    </ul> */}
-                    {/* Hey there! Im a software developer born and raised in Orlando, Florida. My Hobbies include Painting, Hiking, and BLANK.
-                    I am also a cat enthusiest, owning a mischevious and sporatic cat named Sir Arthur.<br /><br /> 
-                    My most recent personal coding project, and the one I am most excited about, is BLANK (link found below), where I discover <br />the best and most efficient ways to annoy a user.<br /> */}
                     <div className='MainTextAboutBodyCardsParent'>
                         <div className='MainTextAboutBodyCardColumn'>
                             <div className='MainTextAboutBodyCardParent '>
@@ -308,11 +307,11 @@ const MainText = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-                {/* <Asteroid size={0.5} startingAngle={Math.PI / 4} placementX={30} placementY={45}/> */}
-            </div>
+                </div> */}
+            {/* </div> */}
+            <About/>
 
-            <div className= 'MainTextSkillsParent' id="Skills">
+            {/* <div className= 'MainTextSkillsParent' id="Skills">
                 <div className='MainTextSkillsTitle MainTextAnimation'>
                     <span>S</span>
                     <span>k</span>
@@ -320,7 +319,6 @@ const MainText = () => {
                     <span>l</span>
                     <span>l</span>
                     <span>s</span>
-                    {/* Skills */}
                 </div>
                 <div className='MainTextSkillsBody'>
                     <div className='MainTextSkillsBodyLeft'>
@@ -350,12 +348,12 @@ const MainText = () => {
                         <span style={{ left: '73.33%', top: '82%' }}>Stripe</span>
                         <span style={{ left: '13.33%', top: '90%' }}>Pygame</span>
                         <span style={{ left: '63.33%', top: '98%' }}>Postman</span>
-                        {/* adding more left causes scroll bar to appear on bottom? fix. */}
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <Skills/>
 
-            <div className= 'MainTextProjectsParent' id="Projects">
+            {/* <div className= 'MainTextProjectsParent' id="Projects">
                 <div className='MainTextProjectsTitle MainTextAnimation'>
                     <span>P</span>
                     <span>r</span>
@@ -365,7 +363,6 @@ const MainText = () => {
                     <span>c</span>
                     <span>t</span>
                     <span>s</span>
-                    {/* projects */}
                 </div>
                 <div className='MainTextProjectsBody'>
                     <div className='MainTextProjectsBodyLeft'>
@@ -389,9 +386,6 @@ const MainText = () => {
                                         Proof of Vue Knowledge
                                     </li>
                                 </ul>
-                                {/* <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
-                                    <img src={githubLogoPink} alt="GitHub" />
-                                </a> */}
                                 <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
                                     <img src={githubLogo} alt="GitHub" />
                                 </a>
@@ -417,9 +411,6 @@ const MainText = () => {
                                         Proof of C++ Knowledge
                                     </li>
                                 </ul>
-                                {/* <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
-                                    <img src={githubLogoPink} alt="GitHub" />
-                                </a> */}
                                 <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
                                     <img src={githubLogo} alt="GitHub" />
                                 </a>
@@ -445,9 +436,6 @@ const MainText = () => {
                                         Proof of SQL Knowledge
                                     </li>
                                 </ul>
-                                {/* <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
-                                    <img src={githubLogoPink} alt="GitHub" />
-                                </a> */}
                                 <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
                                     <img src={githubLogo} alt="GitHub" />
                                 </a>
@@ -475,9 +463,6 @@ const MainText = () => {
                                         Proof of Java Knowledge
                                     </li>
                                 </ul>
-                                {/* <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
-                                    <img src={githubLogoPink} alt="GitHub" />
-                                </a> */}
                                 <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
                                     <img src={githubLogo} alt="GitHub" />
                                 </a>
@@ -503,9 +488,6 @@ const MainText = () => {
                                         Proof of Python Knowledge
                                     </li>
                                 </ul>
-                                {/* <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
-                                    <img src={githubLogoPink} alt="GitHub" />
-                                </a> */}
                                 <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
                                     <img src={githubLogo} alt="GitHub" />
                                 </a>
@@ -531,9 +513,6 @@ const MainText = () => {
                                         Proof of React Knowledge
                                     </li>
                                 </ul>
-                                {/* <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
-                                    <img src={githubLogoPink} alt="GitHub" />
-                                </a> */}
                                 <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
                                     <img src={githubLogo} alt="GitHub" />
                                 </a>
@@ -541,9 +520,10 @@ const MainText = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <Projects/>
 
-            <div className= 'MainTextExperienceParent' id="Experience">
+            {/* <div className= 'MainTextExperienceParent' id="Experience">
                 <div className='MainTextExperienceTitle MainTextAnimation'>
                     <span>E</span>
                     <span>x</span>
@@ -555,7 +535,6 @@ const MainText = () => {
                     <span>n</span>
                     <span>c</span>
                     <span>e</span>
-                    {/* Experience */}
                 </div>
                 <div className='MainTextExperienceBody'>
                     <div className='MainTextExperienceBodySection'>
@@ -601,9 +580,10 @@ const MainText = () => {
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <Experience/>
             
-            <div className='MainTextEducationParent' id="Education">
+            {/* <div className='MainTextEducationParent' id="Education">
                 <div className='MainTextEducationTitle MainTextAnimation'>
                     <span>E</span>
                     <span>d</span>
@@ -631,9 +611,10 @@ const MainText = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <Education/>
 
-            <div className= 'MainTextContactParent' id="Contact">
+            {/* <div className= 'MainTextContactParent' id="Contact">
                 <div className='MainTextContactTitle MainTextAnimation'>
                     <span>C</span>
                     <span>o</span>
@@ -645,7 +626,6 @@ const MainText = () => {
                     <span>&nbsp;</span>
                     <span>M</span>
                     <span>e</span>
-                    {/* Contact Me */}
                 </div>
                 <div className='MainTextContactBody'>
                     <div className='MainTextEmailParent'>
@@ -688,7 +668,8 @@ const MainText = () => {
                     </div>
 
                 </div>
-            </div>
+            </div> */}
+            <Contact/>
             {/* <Asteroid size={0.5} startingAngle={Math.PI / 4} placementX={30} placementY={145}/>
             <Asteroid size={0.5} startingAngle={Math.PI / 4} placementX={30} placementY={145}/> */}
         </div>
