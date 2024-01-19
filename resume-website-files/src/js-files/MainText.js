@@ -4,6 +4,7 @@ import Moon from './Moon';
 import Asteroid from './Asteroid';
 import Astronaught from '../other-files/true_astronaught_2_transparent.png';
 import UFO from '../other-files/ufo_again.png';
+import Laser from './Laser';
 
 import ReactLogo from '../other-files/react_white_logo.png';
 import VueLogo from '../other-files/vue_white_logo.png';
@@ -15,7 +16,18 @@ import PythonLogo from '../other-files/python_white_logo.png';
 import githubLogo from '../other-files/github_white_logo.png'
 // import githubLogoPink from '../other-files/github_pink_logo.png'
 
+// const startCoordinates = { x: 20, y: 30 };
+// const startCoordinates2 = { x: 40, y: 50 };
+
+// const endCoordinates = { x: 60, y: 80 };
+// const endCoordinates2 = { x: 100, y: 110 };
+
+// console.log("startCoordinates:", startCoordinates);
+// console.log("startCoordinates2:", startCoordinates2);
+
 const MainText = () => {
+
+    //-----------------email logic----------------------------------
 
     const [email, setEmail] = useState('');
     const [emailContent, setEmailContent] = useState('');
@@ -33,6 +45,25 @@ const MainText = () => {
         console.log('Sending email:', email);
         console.log('Email content:', emailContent);
     };
+
+    //-----------------Laser logic----------------------------------
+
+    // const [startCoordinates, setStartCoordinates] = useState({ x: 0, y: 0 });
+    // const [endCoordinates, setEndCoordinates] = useState({ x: 200, y: 200 });
+
+    // useEffect(() => {
+    //     // Set the positions of start and end images (replace with your logic)
+    //     const startImage = document.getElementById('UFO');
+    //     const endImage = document.getElementById('UFO2');
+
+    //     const startCoordinatesRect = startImage.getBoundingClientRect();
+    //     const endCoordinatesRect = endImage.getBoundingClientRect();
+
+    //     setStartCoordinates({ x: startCoordinatesRect.x, y: startCoordinatesRect.y });
+    //     setEndCoordinates({ x: endCoordinatesRect.x, y: endCoordinatesRect.y });
+    // }, []);
+    // const startCoordinates = { x: 20, y: 30 };
+    // const startCoordinates2 = { x: 40, y: 50 };
 
     return(
         <div className='MainTextParent'>
@@ -587,36 +618,16 @@ const MainText = () => {
                 <div className='MainTextEducationBody'>
                     <div className='MainTextEducationBodyRow1'>
                         <div className="UFOParent">
-                            <img className="UFO" src={UFO} alt="UFO" />
+                            <img className="UFO" id="UFO" src={UFO} alt="UFO" />
                         </div>
-                        <div className='MainTextEducationBodyText1'>
-                            <div className='MainTextEducationBodyTextLeft'>
-                                <span className='MainTextEducationBodyTextSubtitle'>Utah State University</span>
-                                <span className='MainTextEducationBodyTextSubtitle2'>Bachelor of Computer Science</span>
-                                <span className='MainTextEducationBodyTextSubtitle2'>Magna Cum Laude</span>
-                            </div>
-                            <div className='MainTextEducationBodyTextRight'>
-                                <span className='MainTextEducationBodyTextSubtitle'>Noteworthy Classes</span>
-                                <span className='MainTextEducationBodyTextSubtitle2'>Bachelor of Computer Science</span>
-                                <span className='MainTextEducationBodyTextSubtitle2'>Magna Cum Laude</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='MainTextEducationBodyRow2'>
-                        <div className='MainTextEducationBodyText2'>
-                            <div className='MainTextEducationBodyTextLeft'>
-                                <span className='MainTextEducationBodyTextSubtitle'>Utah State University</span>
-                                <span className='MainTextEducationBodyTextSubtitle2'>Bachelor of Computer Science</span>
-                                <span className='MainTextEducationBodyTextSubtitle2'>Magna Cum Laude</span>
-                            </div>
-                            <div className='MainTextEducationBodyTextRight'>
-                                <span className='MainTextEducationBodyTextSubtitle'>Noteworthy Classes</span>
-                                <span className='MainTextEducationBodyTextSubtitle2'>Bachelor of Computer Science</span>
-                                <span className='MainTextEducationBodyTextSubtitle2'>Magna Cum Laude</span>
-                            </div>
+                        <div className='MainTextEducationBodyText'>
+                            <span className='MainTextEducationBodyTextSubtitle'>Utah State University</span>
+                            <span className='MainTextEducationBodyTextSubtitle2'>Bachelor of Computer Science</span>
+                            <span className='MainTextEducationBodyTextSubtitle2'>Minor In Mathematics</span>
+                            <span className='MainTextEducationBodyTextSubtitle2'>Magna Cum Laude</span>
                         </div>
                         <div className="UFOParent">
-                            <img className="UFO" src={UFO} alt="UFO" />
+                            <img className="UFO2" id="UFO2" src={UFO} alt="UFO" />
                         </div>
                     </div>
                 </div>

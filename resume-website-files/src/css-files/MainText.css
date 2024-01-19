@@ -491,12 +491,14 @@
 }
 
 .MainTextEducationBody {
+    padding-top: 10%;
     color: white;
     font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
     font-size: 20px;
     margin-top: 40px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    position: relative;
 }
 
 .MainTextEducationBodyRow1, .MainTextEducationBodyRow2 {
@@ -512,12 +514,17 @@
 }
 
 
-.MainTextEducationBodyText1, .MainTextEducationBodyText2 {
-    width: 85%;
+.MainTextEducationBodyText, .MainTextEducationBodyText2 {
+    /* width: 85%; */
     /* background-color: blue; */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex:1;
     /* position: relative; */
+}
+
+.MainTextEducationBodyText span {
+    text-align: center;
 }
 
 .MainTextEducationBodyText1 {
@@ -563,25 +570,104 @@
 }
 
 .UFOParent{
-    width: 15%;
+    flex: 1;
+    /* padding: 10%; */
+    /* width: 15%; */
     /* background-color: purple; */
+    position: relative;
 }
 
 .UFO {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     display: block;
-    animation: floatAnimation 3s infinite alternate ease-in-out;
+    animation: UFOAnimation 10s infinite alternate ease-in-out;
 }
 
-@keyframes floatAnimation {
+.UFO2 {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    animation: UFOAnimation2 10s infinite alternate ease-in-out;
+}
+
+@keyframes UFOAnimation {
     0% {
-      transform: translateY(0);
+        transform: translate(100px, 110px);
+    }
+    9% {
+        transform: translate(100px, 100px);
+    }
+    18% {
+        transform: translate(0px, -10px);
+    }
+    27% {
+        transform: translate(0px, 0px);
+    }
+    36% {
+        transform: translate(20px, -200px);
+    }
+    45% {
+        transform: translate(20px, -210px);
+    }
+    54% {
+        transform: translate(20px, -200px);
+    }
+    63% {
+        transform: translate(300px, 0px);
+    }
+    72% {
+        transform: translate(300px, -10px);
+    }
+    81% {
+        transform: translate(300px, 0px);
+    }
+    90% {
+        transform: translate(-50px, 30px)
     }
     100% {
-      transform: translateY(-20px); /* Adjust the value to control the floating range */
+        transform: translate(-50px, 20px);
     }
-  }
+}
+
+@keyframes UFOAnimation2 {
+    0% {
+        transform: translate(-100px, 200px);
+    }
+    9% {
+        transform: translate(-100px, 190px);
+    }
+    18% {
+        transform: translate(-100px, 200px);
+    }
+    27% {
+        transform: translate(0px, -150px);
+    }
+    36% {
+        transform: translate(0px, -160px);
+    }
+    45% {
+        transform: translate(0px, -150px);
+    }
+    54% {
+        transform: translate(-50px, 70px);
+    }
+    63% {
+        transform: translate(-50px, 80px);
+    }
+    72% {
+        transform: translate(350px, -80px);
+    }
+    81% {
+        transform: translate(350px, -90px);
+    }
+    90% {
+        transform: translate(350px, -80px);
+    }
+    100% {
+        transform: translate(-100px, 210px);
+    }
+}
 
 /* --------------------------------Contact---------------------------------- */
 
