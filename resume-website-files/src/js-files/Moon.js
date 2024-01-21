@@ -12,37 +12,15 @@ const Moon = () => {
     const moonRef = useRef();
 
     return (
-        // <div className="moon__grandparent">
-        //     <Canvas>
-        //         <Suspense fallback={null}>
-        //             <Stars
-        //                 radius={300}
-        //                 depth={60}
-        //                 count={20000}
-        //                 factor={7}
-        //                 saturation={0}
-        //                 fade={true}
-        //             />
-        //         </Suspense>
-        //     </Canvas>
         <div className="moon__parent">
             <Canvas>
                 <Suspense fallback={null}>
                     <ambientLight intensity={.12} />
                     <pointLight color="#FFFFFF" position={[1.5, -1, 3.5]} intensity={4} />
-                    {/* <Stars
-                        radius={300}
-                        depth={60}
-                        count={20000}
-                        factor={7}
-                        saturation={0}
-                        fade={true}
-                    /> */}
                     <MoonModel moonRef={moonRef} moonMap={moonMap} />
                 </Suspense>
             </Canvas>
         </div>
-        // </div>
     );
 };
 
