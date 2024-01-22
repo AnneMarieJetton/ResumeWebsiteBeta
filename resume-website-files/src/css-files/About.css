@@ -79,12 +79,11 @@
     background: #969696;
     color: #333;
     transform: rotateY(180deg);
-    /* margin: 10px; */
 }
 
 .MainTextAboutBodyCardBack img {
-    width: 100%; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
 }
 
 .MainTextAboutBodyCardBackText {
