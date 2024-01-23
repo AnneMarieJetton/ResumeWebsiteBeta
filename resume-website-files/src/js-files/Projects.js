@@ -32,25 +32,22 @@ const Projects = () => {
                             <img className="" src={VueLogo} alt="VueLogo" />
                         </div>
                         <div className='ProjectContainerText'>
-                            <span className='ProjectContainerTextTitle'>Vue Project</span>
+                            <span className='ProjectContainerTextTitle'>BagIt.com</span>
                             <ul className='ProjectContainerTextList'>
                                 <li>
-                                    What the project is
+                                    An online grocery shopping experience Created using Vue.js.
                                 </li>
                                 <li>
-                                    bla
+                                    Use of reusable components
                                 </li>
                                 <li>
-                                    bla
+                                    Use of API's
                                 </li>
                                 <li>
                                     Proof of Vue Knowledge
                                 </li>
                             </ul>
-                            {/* <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
-                                <img src={githubLogoPink} alt="GitHub" />
-                            </a> */}
-                            <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/AnneMarieJetton/BagIt" className="github__project__link" target="_blank" rel="noopener noreferrer">
                                 <img src={githubLogo} alt="GitHub" />
                             </a>
                         </div>
@@ -60,25 +57,22 @@ const Projects = () => {
                             <img className="" src={CppLogo} alt="CppLogo" />
                         </div>
                         <div className='ProjectContainerText'>
-                            <span className='ProjectContainerTextTitle'>C++ Project</span>
+                            <span className='ProjectContainerTextTitle'>C++ Todo List Application</span>
                             <ul className='ProjectContainerTextList'>
                                 <li>
-                                    What the project is
+                                    A Todo list created with C++
                                 </li>
                                 <li>
-                                    bla
+                                    Use of external files
                                 </li>
                                 <li>
-                                    bla
+                                    Use of GUI tools
                                 </li>
                                 <li>
                                     Proof of C++ Knowledge
                                 </li>
                             </ul>
-                            {/* <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
-                                <img src={githubLogoPink} alt="GitHub" />
-                            </a> */}
-                            <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/AnneMarieJetton/CppTodoList" className="github__project__link" target="_blank" rel="noopener noreferrer">
                                 <img src={githubLogo} alt="GitHub" />
                             </a>
                         </div>
@@ -88,25 +82,19 @@ const Projects = () => {
                             <img className="" src={SQLLogo} alt="SQLLogo" />
                         </div>
                         <div className='ProjectContainerText'>
-                            <span className='ProjectContainerTextTitle'>SQL Project</span>
+                            <span className='ProjectContainerTextTitle'>SQL Covid Data Exploration</span>
                             <ul className='ProjectContainerTextList'>
                                 <li>
-                                    What the project is
+                                    A deep dive into the covid data from 2020, This project makes use of SQL to understand and learn from the data.
                                 </li>
                                 <li>
-                                    bla
-                                </li>
-                                <li>
-                                    bla
+                                    Use of Tableau
                                 </li>
                                 <li>
                                     Proof of SQL Knowledge
                                 </li>
                             </ul>
-                            {/* <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
-                                <img src={githubLogoPink} alt="GitHub" />
-                            </a> */}
-                            <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/AnneMarieJetton/SQLCovidDataExploration" className="github__project__link" target="_blank" rel="noopener noreferrer">
                                 <img src={githubLogo} alt="GitHub" />
                             </a>
                         </div>
