@@ -41,7 +41,7 @@ const Projects = () => {
                                     Use of reusable components
                                 </li>
                                 <li>
-                                    Use of API's
+                                    Use of APIs
                                 </li>
                                 <li>
                                     Proof of Vue Knowledge
@@ -106,25 +106,22 @@ const Projects = () => {
                             <img className="" src={JavaLogo} alt="JavaLogo" />
                         </div>
                         <div className='ProjectContainerText'>
-                            <span className='ProjectContainerTextTitle'>Java Project</span>
+                            <span className='ProjectContainerTextTitle'>Whats the password?</span>
                             <ul className='ProjectContainerTextList'>
                                 <li>
-                                    What the project is
+                                    A fun password generator...where there are far too many rules.
                                 </li>
                                 <li>
-                                    bla
+                                    Use of Apis
                                 </li>
                                 <li>
-                                    bla
+                                    Use of GUI tools
                                 </li>
                                 <li>
                                     Proof of Java Knowledge
                                 </li>
                             </ul>
-                            {/* <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
-                                <img src={githubLogoPink} alt="GitHub" />
-                            </a> */}
-                            <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/AnneMarieJetton/WhatsThePassword" className="github__project__link" target="_blank" rel="noopener noreferrer">
                                 <img src={githubLogo} alt="GitHub" />
                             </a>
                         </div>
@@ -134,25 +131,22 @@ const Projects = () => {
                             <img className="" src={PythonLogo} alt="PythonLogo" />
                         </div>
                         <div className='ProjectContainerText'>
-                            <span className='ProjectContainerTextTitle'>Python Project</span>
+                            <span className='ProjectContainerTextTitle'>Unfair Chess</span>
                             <ul className='ProjectContainerTextList'>
                                 <li>
-                                    What the project is
+                                    The classic game, with a bit of a twist, written in python.
                                 </li>
                                 <li>
-                                    bla
+                                    Use of Pygame
                                 </li>
                                 <li>
-                                    bla
+                                    Use of GUI tools
                                 </li>
                                 <li>
                                     Proof of Python Knowledge
                                 </li>
                             </ul>
-                            {/* <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
-                                <img src={githubLogoPink} alt="GitHub" />
-                            </a> */}
-                            <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/AnneMarieJetton/UnfairChess" className="github__project__link" target="_blank" rel="noopener noreferrer">
                                 <img src={githubLogo} alt="GitHub" />
                             </a>
                         </div>
@@ -162,25 +156,19 @@ const Projects = () => {
                             <img className="" src={ReactLogo} alt="ReactLogo" />
                         </div>
                         <div className='ProjectContainerText'>
-                            <span className='ProjectContainerTextTitle'>React Project</span>
+                            <span className='ProjectContainerTextTitle'>Arthur's chat room</span>
                             <ul className='ProjectContainerTextList'>
                                 <li>
-                                    What the project is
+                                    A website created by Sir Arthur's own two paws, This is a chat room where you can chat with others. (and Arthur) 
                                 </li>
                                 <li>
-                                    bla
-                                </li>
-                                <li>
-                                    bla
+                                    Use of Firebase
                                 </li>
                                 <li>
                                     Proof of React Knowledge
                                 </li>
                             </ul>
-                            {/* <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
-                                <img src={githubLogoPink} alt="GitHub" />
-                            </a> */}
-                            <a href="https://github.com/AnneMarieJetton" className="github__project__link" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/AnneMarieJetton/ArthursChatRoom" className="github__project__link" target="_blank" rel="noopener noreferrer">
                                 <img src={githubLogo} alt="GitHub" />
                             </a>
                         </div>

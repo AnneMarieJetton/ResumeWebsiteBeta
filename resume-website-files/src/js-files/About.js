@@ -150,7 +150,7 @@ const About = () => {
                                 <div className='MainTextAboutBodyCardFront'></div>
                                 <div className='MainTextAboutBodyCardBack'>
                                     <div className="MainTextAboutBodyCardBackText">
-                                        My favorite coding project currently is BLANK. You can find it on my github!
+                                        My favorite coding project is Unfair Chess. You can find it below!
                                     </div>
                                 </div>
                             </div>
