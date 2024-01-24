@@ -59,55 +59,25 @@ const Contact = () => {
                 <span>e</span>
             </div>
             <div className='MainTextContactBody'>
-                <div className='MainTextEmailParent'>
 
-                    {/* <div className='MainTextEmailDestinationInput'>
-                        <label className='EmailInputLabel' htmlFor="recipientEmailInput">Your Name: </label>
-                        <input
-                            type="email"
-                            id="recipientEmailInput"
-                            className="EmailInput"
-                            value={name}
-                            onChange={handleNameChange}
-                        />
-                    </div>
-
+                <form className='MainTextEmailParent' ref={form} onSubmit={sendEmail}>
+                    <label className='EmailInputLabel'>Your Name:</label>
                     <div className='MainTextEmailDestinationInput'>
-                        <label className='EmailInputLabel' htmlFor="senderEmailInput">Your Email: </label>
-                        <input
-                            type="email"
-                            id="senderEmailInput"
-                            className="EmailInput"
-                            value={email}
-                            onChange={handleEmailChange}
-                        />
+                        <input className="EmailInput" type="text" name="user_name" />
                     </div>
-
+                    <label className='EmailInputLabel'>Your Email:</label>
+                    <div className='MainTextEmailDestinationInput'>
+                        <input className="EmailInput" type="email" name="user_email" />
+                    </div>
+                    <label className='EmailInputLabel'>Your Message:</label>
                     <div className='MainTextEmailContentInput'>
-                        <textarea
-                            id="contentInput"
-                            className="ContentInput"
-                            value={emailContent}
-                            onChange={handleContentChange}
-                        />
+                        <textarea className="ContentInput" name="message" />
                     </div>
-
-                    <button onClick={handleSendEmail}>Send</button> */}
-
-                    <form ref={form} onSubmit={sendEmail}>
-                        <label>Name</label>
-                        <input type="text" name="user_name" />
-                        <label>Email</label>
-                        <input type="email" name="user_email" />
-                        <label>Message</label>
-                        <textarea name="message" />
-                        <input type="submit" value="Send" />
-                    </form>
-
-                </div>
+                    <input className="SendButton" type="submit" value="Send" />
+                </form>
 
                 <div className='MainTextContactMessage'>
-                    Interested in contacting me? click any of the three links on the side bar, or you can write me an email right here! Happy Coding {'<'}3
+                    {/* Interested in contacting me? click any of the three links on the side bar, or you can write me an email right here! Happy Coding {'<'}3 */}
                 </div>
 
             </div>

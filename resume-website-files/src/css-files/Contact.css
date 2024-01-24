@@ -25,11 +25,13 @@
     /* border: 2px solid white; */
     border-radius: 8px;
     margin-right: 50px;
+    padding: 10px;
     height: 65vh;
     display: flex;
     flex-direction: column;
-    background-color: #080808;
-    /* background-color: transparent; */
+    /* background-color: #080808; */
+    /* background-color: black; */
+    /* background-color: red; */
 }
 
 .MainTextContactMessage{
@@ -37,26 +39,32 @@
 }
 
 .MainTextEmailDestinationInput{
-    background-color: black;
-    /* border-bottom: 2px solid white; */
-    margin-left: 5px;
-    margin-right: 5px;
+    /* background-color: black; */
+    background-color: #080808;
+    /* background-color: #969696; */
     margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 10px;
     padding: 4px;
     display: flex;
     flex-direction: row;
+
+    /* border: 2px solid #333333; */
 }
 
 .MainTextEmailContentInput{
-    background-color: black;
-    margin: 5px;
+    /* background-color: black; */
+    background-color: #080808;
+    /* background-color: #969696; */
     margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 10px;
     padding: 4px;
     display: flex;
     flex-direction: column;
-    height: 100%; 
+    height: 100%;
+    
+    /* border: 2px solid #333333; */
 }
 
 .EmailInputLabel {
@@ -102,8 +110,8 @@
     color: white; 
 }
 
-button {
-    margin-top: 10px;
+.SendButton {
+    /* margin-top: 10px;
     background-color: transparent;
     border: 2px solid #969696;
     color: #969696;
@@ -113,10 +121,25 @@ button {
     margin: 5px;
     position: absolute;
     bottom: 5px;
-    right: 5px;
+    right: 5px; */
+
+    background-color: #080808;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+
+    border: 2px solid #333333;
+    color: #333333;
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   
-  button:hover {
+  .SendButton:hover {
     background-color: white;
     border: 2px solid white;
     color: black; 
