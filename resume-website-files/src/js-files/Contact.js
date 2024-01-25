@@ -5,6 +5,11 @@ import '../css-files/Contact.css';
 import React, { useRef, useEffect, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
+import linkedinLogo from '../other-files/linkedin_white_logo.png'
+import githubLogo from '../other-files/github_white_logo.png'
+import emailLogo from '../other-files/email_white_logo.png'
+
+
 const Contact = () => {
 
     const [email, setEmail] = useState('');
@@ -77,7 +82,30 @@ const Contact = () => {
                 </form>
 
                 <div className='MainTextContactMessage'>
-                    {/* Interested in contacting me? click any of the three links on the side bar, or you can write me an email right here! Happy Coding {'<'}3 */}
+                    <div className='MainTextContactMessageDiv'>
+                        <div className='ProjectContainerImage'>
+                            <a href="https://github.com/AnneMarieJetton" className="" target="_blank" rel="noopener noreferrer">
+                                <img src={githubLogo} alt="GitHub" />
+                            </a>
+                        </div>
+                        <span>Check out my respoitories on Github!</span>
+                    </div>
+                    <div className='MainTextContactMessageDiv'>
+                        <div className='ProjectContainerImage'>
+                            <a href="https://www.linkedin.com/in/anne-jetton/" className="" target="_blank" rel="noopener noreferrer">
+                                <img src={linkedinLogo} alt="LinkedIn" />
+                            </a>
+                        </div>
+                        <span>Visit my LinkedIn Profile!</span>
+                    </div>
+                    <div className='MainTextContactMessageDiv' style={{ marginBottom: 0 }}>
+                        <div className='ProjectContainerImage'>
+                            <a href="mailto:annemariejetton@gmail.com" className="">
+                                <img src={emailLogo} alt="Email" />
+                            </a>
+                        </div>
+                        <span>Send me an email!</span>
+                    </div>
                 </div>
 
             </div>
