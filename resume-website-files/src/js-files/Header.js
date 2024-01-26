@@ -14,7 +14,7 @@ function Header() {
             {/* <div className="fade__in__intro"> */}
                 <img className="header__logo" src={moonLogo} alt="moon" />
                 <span className="header__logo__text__1">Anne</span>
-                <span className="header__logo__text__2">Web Developer</span>
+                <span className="header__logo__text__2">Software Developer</span>
             </div>
 
             <div className="header__nav">

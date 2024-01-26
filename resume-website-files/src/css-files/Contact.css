@@ -81,6 +81,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 90%;
 }
 
 .MainTextContactMessageDiv span {
@@ -106,7 +107,8 @@
     /* background-color: black; */
     /* background-color: #080808; */
     /* background-color: #c9c9c9; */
-    background-color: white;
+    /* background-color: white; */
+    background: #cfcfcf;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -121,7 +123,8 @@
     /* background-color: black; */
     /* background-color: #080808; */
     /* background-color: #c9c9c9; */
-    background-color: white;
+    /* background-color: white; */
+    background: #cfcfcf;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -210,7 +213,7 @@
   .SendButton:hover {
     /* background-color: #c9c9c9;
     border: 2px solid #c9c9c9; */
-    background-color: white;
-    border: 2px solid white;
+    background-color: #cfcfcf;
+    border: 2px solid #cfcfcf;
     color: black; 
   }
