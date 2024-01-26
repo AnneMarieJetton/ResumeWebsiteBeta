@@ -1,6 +1,21 @@
 .MainTextProjectsParent{
     min-height: 100%;
     padding-top: 5%;
+    /* animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%; */
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8; /* Adjust this value as needed */
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .MainTextProjectsTitle{
@@ -8,6 +23,9 @@
     color: white;
     font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
     font-size: 50px;
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
 
 .MainTextProjectsBody{
@@ -42,6 +60,9 @@
     margin-bottom: 40px;
     padding: 20px;
     min-height: 140px;
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
 
 .ProjectContainerImage {

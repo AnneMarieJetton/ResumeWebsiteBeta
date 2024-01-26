@@ -1,6 +1,21 @@
 .MainTextSkillsParent{
     min-height: 100%;
     padding-top: 5%;
+    /* animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%; */
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8; /* Adjust this value as needed */
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .MainTextSkillsTitle{
@@ -9,6 +24,9 @@
     color: white;
     font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
     font-size: 50px;
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
 }
 
 .MainTextSkillsBody{
@@ -18,8 +36,7 @@
     margin-top: 40px;
     /* margin-bottom: 10%; */
     display: flex; /* Use flexbox */
-    flex-direction: row; /* Children will be in a row */
-    /* margin-top: 1%; */
+    flex-direction: row;
 }
 
 .MainTextSkillsBodyRight,
@@ -56,6 +73,9 @@
     flex: 1;
     /* position: relative; */
     position: absolute;
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
 }
 
 .AstronaughtParent {
@@ -63,6 +83,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
 }
 
 .Astronaught {

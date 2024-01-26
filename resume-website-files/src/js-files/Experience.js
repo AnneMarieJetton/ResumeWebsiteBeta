@@ -21,11 +21,11 @@ const Experience = () => {
             <div className='MainTextExperienceBody'>
                 <div className='MainTextExperienceBodySection'>
                     <div className='MainTextExperienceBodyTitles'>
-                        <span className='MainTextExperienceBodyCompanyName'>company name</span>
+                        <span className='MainTextExperienceBodyCompanyName'>Futurist EDU</span>
                         <span className='MainTextExperienceBodyDate'>March 2023 - Current</span>
                     </div>
                     <span className='MainTextExperienceBodyJobTitle'>Junior Software Developer<br /></span>
-                    <span className='MainTextExperienceBodyJobDescription'>BLANK is a small start up located in BLANK, Utah. Their goal is to incorporate AI into the Psychology <br />space, to help veterens and public workers with their mental health.<br /><br /></span>
+                    <span className='MainTextExperienceBodyJobDescription'>Futurist EDU is a small start up located in Ogden, Utah. Their goal is to incorporate AI into the Psychology space, to help veterens and public workers with their mental health.<br /><br /></span>
                     <span className='MainTextExperienceBodyRespAndAcom'>Responsibilities and Acomplishments:</span>
                     <ul className='MainTextExperienceBodyRespAndAcomList'>
                         <li>Redesigned Website to give it a professional look</li>
@@ -39,7 +39,7 @@ const Experience = () => {
                         <span className='MainTextExperienceBodyDate'>March 2022 - March 2023</span>
                     </div>
                     <span className='MainTextExperienceBodyJobTitle'>Computer Science Intern<br /></span>
-                    <span className='MainTextExperienceBodyJobDescription'>Cubic is a transportation company based out of San Diego, California. As an intern, I worked with a scrum <br />team to develop internal tools that were used by senior developers for larger development projects, as <br />well as debugging and documenting pre-existing code.<br /><br /></span>
+                    <span className='MainTextExperienceBodyJobDescription'>Cubic is a transportation company based out of San Diego, California. As an intern, I worked on a scrum team to develop internal tools that were used by senior developers for larger development projects, as well as debugging and documenting pre-existing code.<br /><br /></span>
                     <span className='MainTextExperienceBodyRespAndAcom'>Responsibilities and Acomplishments:</span>
                     <ul className='MainTextExperienceBodyRespAndAcomList'>
                         <li>Daily Scrum Meetings</li>
@@ -53,7 +53,7 @@ const Experience = () => {
                         <span className='MainTextExperienceBodyDate'>August 2018 - March 2022</span>
                     </div>
                     <span className='MainTextExperienceBodyJobTitle'>Computer Science Tutor<br /></span>
-                    <span className='MainTextExperienceBodyJobDescription'>During my years at USU, I worked as a tutor among my peers and lower classmen to teach subject material, <br />complete assignments, and study for tests.<br /><br /></span>
+                    <span className='MainTextExperienceBodyJobDescription'>During my years at USU, I worked as a tutor among my peers and lower classmen to teach subject material, complete assignments, and study for tests.<br /><br /></span>
                     <span className='MainTextExperienceBodyRespAndAcom'>Responsibilities and Acomplishments:</span>
                     <ul className='MainTextExperienceBodyRespAndAcomList'>
                         <li>Scheduled and kept appointments for tutoring</li>
