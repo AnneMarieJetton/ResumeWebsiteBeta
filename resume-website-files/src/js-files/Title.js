@@ -28,7 +28,10 @@ const Title = () => {
                     {/* I'm Anne */}
                 </div>
             </div>
-            <Moon/>
+            <div className= 'MainTextTitleRight'>
+                <Moon/>
+            </div>
+            {/* <Moon/> */}
         </div>
     )
 }

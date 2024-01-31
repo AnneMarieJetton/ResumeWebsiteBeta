@@ -70,7 +70,7 @@
     flex-direction: row;
 }
 
-.ProjectContainerImage {
+.ContactImage {
     width: 20%;
     height: 100%;
     background-color: transparent;
@@ -84,6 +84,14 @@
     opacity: 90%;
 }
 
+.ContactImage img {
+    width: 100%;
+    height: auto; 
+    /* height: 100%; */
+    max-width: 100%; 
+    max-height: 100%;
+}
+
 .MainTextContactMessageDiv span {
     width: 80%;
     display: flex;
@@ -91,8 +99,7 @@
     /* justify-content: center; */
 }
 
-.ProjectContainerImage:hover {
-    /* background-color: #272727; */
+.ContactImage:hover {
     opacity: 0.3;
 }
 

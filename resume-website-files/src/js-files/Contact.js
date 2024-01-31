@@ -83,15 +83,15 @@ const Contact = () => {
 
                 <div className='MainTextContactMessage'>
                     <div className='MainTextContactMessageDiv'>
-                        <div className='ProjectContainerImage'>
+                        <div className='ContactImage'>
                             <a href="https://github.com/AnneMarieJetton" className="" target="_blank" rel="noopener noreferrer">
                                 <img src={githubLogo} alt="GitHub" />
                             </a>
                         </div>
-                        <span>Check out my respoitories on Github!</span>
+                        <span>Check out my repositories on Github!</span>
                     </div>
                     <div className='MainTextContactMessageDiv'>
-                        <div className='ProjectContainerImage'>
+                        <div className='ContactImage'>
                             <a href="https://www.linkedin.com/in/anne-jetton/" className="" target="_blank" rel="noopener noreferrer">
                                 <img src={linkedinLogo} alt="LinkedIn" />
                             </a>
@@ -99,7 +99,7 @@ const Contact = () => {
                         <span>Visit my LinkedIn Profile!</span>
                     </div>
                     <div className='MainTextContactMessageDiv' style={{ marginBottom: 0 }}>
-                        <div className='ProjectContainerImage'>
+                        <div className='ContactImage'>
                             <a href="mailto:annemariejetton@gmail.com" className="">
                                 <img src={emailLogo} alt="Email" />
                             </a>

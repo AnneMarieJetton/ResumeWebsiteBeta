@@ -1,20 +1,27 @@
 .MainTextTitleParent{
     min-height: 100%;
-    padding-top: 10%;
-    /* display: flex; 
+    /* padding-top: 10%; */
+    display: flex; 
     flex-direction: row;
-    position: relative; */
+    position: relative;
 }
 
-.MainTextTitleLeft{
-  /* flex: 1; */
+.MainTextTitleLeft {
+  flex: 1;
+  /* display: flex;
+  flex-direction: column; */
+  /* align-items: center; */
+}
+
+.MainTextTitleRight{
+  flex: 1;
 }
 
 .MainTextTitle{
     color: white;
     font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
     font-size: 150px;
-    margin-top: 12%;
+    margin-top: 50%;
     animation: FadeIn 0.5s linear 1.6s forwards;
     opacity: 0;
 }

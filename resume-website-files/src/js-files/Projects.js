@@ -32,7 +32,10 @@ const Projects = () => {
                             <img className="" src={VueLogo} alt="VueLogo" />
                         </div>
                         <div className='ProjectContainerText'>
-                            <span className='ProjectContainerTextTitle'>BagIt.com</span>
+                            <div className='ProjectContainerTextTitle'>
+                                BagIt.com
+                            </div>
+                            {/* <span className='ProjectContainerTextTitle'>BagIt.com</span> */}
                             <ul className='ProjectContainerTextList'>
                                 <li>
                                     An online grocery shopping experience Created using Vue.js.
@@ -57,7 +60,10 @@ const Projects = () => {
                             <img className="" src={CppLogo} alt="CppLogo" />
                         </div>
                         <div className='ProjectContainerText'>
-                            <span className='ProjectContainerTextTitle'>C++ Todo List Application</span>
+                            <div className='ProjectContainerTextTitle'>
+                                C++ Todo List Application
+                            </div>
+                            {/* <span className='ProjectContainerTextTitle'>C++ Todo List Application</span> */}
                             <ul className='ProjectContainerTextList'>
                                 <li>
                                     A Todo list created with C++
@@ -82,7 +88,10 @@ const Projects = () => {
                             <img className="" src={SQLLogo} alt="SQLLogo" />
                         </div>
                         <div className='ProjectContainerText'>
-                            <span className='ProjectContainerTextTitle'>SQL Covid Data Exploration</span>
+                            <div className='ProjectContainerTextTitle'>
+                                SQL Covid Data Exploration
+                            </div>
+                            {/* <span className='ProjectContainerTextTitle'>SQL Covid Data Exploration</span> */}
                             <ul className='ProjectContainerTextList'>
                                 <li>
                                     A deep dive into the covid data from 2020, This project makes use of SQL to understand and learn from the data.
@@ -106,7 +115,10 @@ const Projects = () => {
                             <img className="" src={JavaLogo} alt="JavaLogo" />
                         </div>
                         <div className='ProjectContainerText'>
-                            <span className='ProjectContainerTextTitle'>Whats the password?</span>
+                            <div className='ProjectContainerTextTitle'>
+                                Whats the password?
+                            </div>
+                            {/* <span className='ProjectContainerTextTitle'>Whats the password?</span> */}
                             <ul className='ProjectContainerTextList'>
                                 <li>
                                     A fun password generator...where there are far too many rules.
@@ -131,7 +143,10 @@ const Projects = () => {
                             <img className="" src={PythonLogo} alt="PythonLogo" />
                         </div>
                         <div className='ProjectContainerText'>
-                            <span className='ProjectContainerTextTitle'>Unfair Chess</span>
+                            <div className='ProjectContainerTextTitle'>
+                                Unfair Chess
+                            </div>
+                            {/* <span className='ProjectContainerTextTitle'>Unfair Chess</span> */}
                             <ul className='ProjectContainerTextList'>
                                 <li>
                                     The classic game, with a bit of a twist, written in python.
@@ -156,7 +171,10 @@ const Projects = () => {
                             <img className="" src={ReactLogo} alt="ReactLogo" />
                         </div>
                         <div className='ProjectContainerText'>
-                            <span className='ProjectContainerTextTitle'>Arthur's chat room</span>
+                            <div className='ProjectContainerTextTitle'>
+                                Arthur's chat room
+                            </div>
+                            {/* <span className='ProjectContainerTextTitle'>Arthur's chat room</span> */}
                             <ul className='ProjectContainerTextList'>
                                 <li>
                                     A website created by Sir Arthur's own two paws, This is a chat room where you can chat with others. (and Arthur) 

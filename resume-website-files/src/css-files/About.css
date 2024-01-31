@@ -105,6 +105,9 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    flex: 1; /* Allow the text to shrink */
+    min-width: 0;
+    font-size: 1vw;
 }
 
 .noFlip {
@@ -121,4 +124,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1; /* Allow the text to shrink */
+    min-width: 0;
+    font-size: 1vw;
 }

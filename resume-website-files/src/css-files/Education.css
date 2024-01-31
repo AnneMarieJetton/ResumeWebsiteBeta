@@ -66,6 +66,7 @@
     animation: fade linear both;
     animation-timeline: view();
     animation-range: entry 0% cover 50%;
+    margin-bottom: 40px;
 }
 
 .MainTextEducationBodyText1 {
@@ -136,79 +137,80 @@
 }
 
 @keyframes UFOAnimation {
+
     0% {
-        transform: translate(100px, 110px);
+        transform: translate(33%, 36%);
     }
     9% {
-        transform: translate(100px, 100px);
+        transform: translate(33%, 33%);
     }
     18% {
-        transform: translate(0px, -10px);
+        transform: translate(0%, -3%);
     }
     27% {
-        transform: translate(0px, 0px);
+        transform: translate(0%, 0%);
     }
     36% {
-        transform: translate(20px, -200px);
+        transform: translate(6%, -66%);
     }
     45% {
-        transform: translate(20px, -210px);
+        transform: translate(6%, -69%);
     }
     54% {
-        transform: translate(20px, -200px);
+        transform: translate(6%, -66%);
     }
     63% {
-        transform: translate(300px, 0px);
+        transform: translate(99%, 0%);
     }
     72% {
-        transform: translate(300px, -10px);
+        transform: translate(99%, -3%);
     }
     81% {
-        transform: translate(300px, 0px);
+        transform: translate(99%, 0%);
     }
     90% {
-        transform: translate(-50px, 30px)
+        transform: translate(-16%, 9%)
     }
     100% {
-        transform: translate(-50px, 20px);
+        transform: translate(-16%, 6%);
     }
 }
 
 @keyframes UFOAnimation2 {
     0% {
-        transform: translate(-100px, 200px);
+        transform: translate(-33%, 66%);
     }
     9% {
-        transform: translate(-100px, 190px);
+        transform: translate(-33%, 63%);
     }
     18% {
-        transform: translate(-100px, 200px);
+        transform: translate(-33%, 66%);
     }
     27% {
-        transform: translate(0px, -150px);
+        transform: translate(0%, -48%);
     }
     36% {
-        transform: translate(0px, -160px);
+        transform: translate(0%, -51%);
     }
     45% {
-        transform: translate(0px, -150px);
+        transform: translate(0%, -48%);
     }
     54% {
-        transform: translate(-50px, 70px);
+        transform: translate(-16%, 22%);
     }
     63% {
-        transform: translate(-50px, 80px);
+        transform: translate(-16%, 25%);
     }
     72% {
-        transform: translate(350px, -80px);
+        transform: translate(115%, -25%);
     }
     81% {
-        transform: translate(350px, -90px);
+        transform: translate(115%, -28%);
     }
     90% {
-        transform: translate(350px, -80px);
+        transform: translate(115%, -25%);
     }
     100% {
-        transform: translate(-100px, 210px);
+        transform: translate(-33%, 69%);
     }
 }
