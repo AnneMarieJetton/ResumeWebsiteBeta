@@ -8,22 +8,32 @@
 
 .MainTextTitleLeft {
   flex: 1;
-  /* display: flex;
-  flex-direction: column; */
-  /* align-items: center; */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  /* align-items: center; Center vertically */
+  height: 100vh; /* Set the height of the container */
+  flex-direction: column;
+  /* background-color: red; */
+  min-width: 0;
 }
 
 .MainTextTitleRight{
   flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  /* background-color: blue; */
+  min-width: 0;
 }
 
 .MainTextTitle{
     color: white;
     font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
-    font-size: 150px;
-    margin-top: 50%;
+    /* font-size: 150px; */
     animation: FadeIn 0.5s linear 1.6s forwards;
     opacity: 0;
+    font-size: 7.8vw;
 }
 
 @keyframes FadeIn {
@@ -71,7 +81,8 @@
 .MainTextSubtitle{
     color: white;
     font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
-    font-size: 50px;
+    /* font-size: 50px; */
     animation: FadeIn 0.5s linear 2.2s forwards;
     opacity: 0;
+    font-size: 2.6vw;
 }
