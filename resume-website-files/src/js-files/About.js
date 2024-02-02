@@ -3,11 +3,44 @@ import '../css-files/About.css';
 import Green from '../other-files/green_color.png';
 import Arthur from '../other-files/sir_arthur_1.png';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState , useRef} from 'react';
 
 const About = () => {
+
+    const mainTextAboutParentRef = useRef(null);
+    const [divWidth, setDivWidth] = useState(0);
+
+    const handleResize = () => {
+        if (mainTextAboutParentRef.current) {
+            setDivWidth(mainTextAboutParentRef.current.clientWidth);
+        }
+    };
+
+    useEffect(() => {
+        if (mainTextAboutParentRef.current) {
+            setDivWidth(mainTextAboutParentRef.current.clientWidth);
+        }
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, [mainTextAboutParentRef]);
+
+    const calculateFontSize = (minFontSize, maxFontSize) => {
+        const minContainerWidth = 750;
+      
+        // Adjust the scaleFactor based on your requirements
+        const scaleFactor = (Math.max(minContainerWidth, divWidth) / 750) * 2.5; // Using 750 as the reference width
+      
+        const fontSize = minFontSize * scaleFactor; // Assuming the initial font size is 10px
+      
+        return Math.min(maxFontSize, Math.max(minFontSize, fontSize)) + 'px';
+    };
+
     return (
-        <div className= 'MainTextAboutParent' id="About">
+        <div className= 'MainTextAboutParent' id="About" ref={mainTextAboutParentRef}>
             <div className='MainTextAboutTitle MainTextAnimation'>
                 <span>A</span>
                 <span>b</span>
@@ -16,7 +49,7 @@ const About = () => {
                 <span>t</span>
                 {/* About */}
             </div>
-            <div className='MainTextAboutBody'>
+            <div className='MainTextAboutBody' style={{ fontSize: calculateFontSize(4, 20) }}>
                 <div className='MainTextAboutBodyCardsParent'>
                     <div className='MainTextAboutBodyCardColumn'>
                         <div className='MainTextAboutBodyCardParent '>
@@ -60,7 +93,7 @@ const About = () => {
                                 <div className='MainTextAboutBodyCardFront'></div>
                                 <div className='MainTextAboutBodyCardBack'>
                                     <div className="MainTextAboutBodyCardBackText">
-                                        I love creepy video games like 'Little Nightmares' and 'Subnautica'.
+                                        I love creepy video games like 'Little Nightmares'.
                                     </div>
                                 </div>
                             </div>
@@ -69,7 +102,7 @@ const About = () => {
                             <div className='MainTextAboutBodyCard'>
                                 <div className='MainTextAboutBodyCardFront'></div>
                                 <div className='MainTextAboutBodyCardBack'>
-                                    <div className="MainTextAboutBodyCardBackText">
+                                    <div className="MainTextAboutBodyCardBackText" style={{overflow: 'hidden'}}>
                                         <img src={Arthur} alt="Arthur" />
                                     </div>
                                 </div>
@@ -128,7 +161,7 @@ const About = () => {
                                 <div className='MainTextAboutBodyCardFront'></div>
                                 <div className='MainTextAboutBodyCardBack'>
                                     <div className="MainTextAboutBodyCardBackText">
-                                        My favorite dessert is crepes with cream cheese filling. Delicious!
+                                        My favorite dessert is crepes with cream cheese filling.
                                     </div>
                                 </div>
                             </div>
@@ -140,7 +173,7 @@ const About = () => {
                                 <div className='MainTextAboutBodyCardFront'></div>
                                 <div className='MainTextAboutBodyCardBack'>
                                     <div className="MainTextAboutBodyCardBackText">
-                                        I love reading. there is nothing quite like the smell of a new book.
+                                        I love reading, and the smell of a new book.
                                     </div>
                                 </div>
                             </div>
@@ -172,7 +205,7 @@ const About = () => {
                                 <div className='MainTextAboutBodyCardFront'></div>
                                 <div className='MainTextAboutBodyCardBack'>
                                     <div className="MainTextAboutBodyCardBackText">
-                                        My favorite color is green, but not just any green, This specific shade &rarr; 
+                                        My favorite color is this specific shade of green. &rarr; 
                                     </div>
                                 </div>
                             </div>
