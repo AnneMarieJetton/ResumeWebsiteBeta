@@ -1,6 +1,8 @@
 .MainTextAboutParent{
-    min-height: 100%;
+    /* min-height: 100%; */
     padding-top: 5%;
+    padding-bottom: 5%;
+    min-width: 750px;
 }
 
 @keyframes fade {
@@ -28,8 +30,17 @@
 .MainTextAboutBody{
     color:#cecece;
     font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
-    font-size: 20px;
+    font-size: 10px;
     margin-top: 40px;
+    /* min-width: 750px; */
+    /* min-height: 750px; */
+
+    /* font-size: 2vw; */
+
+    /* Media query to set a minimum font size */
+    @media (min-width: 950px) {
+        font-size: 1vw; /* Set a specific minimum font size for wider screens */
+    }
 }
 
 .MainTextAboutBodyCardsParent{
@@ -53,6 +64,8 @@
     animation: fade linear both;
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
+    /* min-width: 100px;
+    min-height: 100px; */
 }
 
 .MainTextAboutBodyCard {
@@ -61,6 +74,8 @@
     height: 100%;
     transform-style:preserve-3d;
     transition: all 0.5s ease;
+    /* min-width: 100px;
+    min-height: 100px; */
 }
 
 .MainTextAboutBodyCardFixed {
@@ -80,6 +95,8 @@
     backface-visibility: hidden;
     background: #080808;
     color: #333;
+    /* min-width: 100px;
+    min-height: 100px; */
 }
 
 .MainTextAboutBodyCardBack {
@@ -90,6 +107,8 @@
     background: #cfcfcf;
     color: #333;
     transform: rotateY(180deg);
+    /* min-width: 100px;
+    min-height: 100px; */
 }
 
 .MainTextAboutBodyCardBack img {
@@ -106,8 +125,9 @@
     align-items: center;
     overflow: hidden;
     flex: 1; /* Allow the text to shrink */
-    min-width: 0;
-    font-size: 1vw;
+    /* min-width: 100px;
+    min-height: 100px; */
+    /* font-size: 1vw; */
 }
 
 .noFlip {
@@ -124,7 +144,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     flex: 1; /* Allow the text to shrink */
-    min-width: 0;
-    font-size: 1vw;
+    /* min-width: 100px;
+    min-height: 100px; */
+    /* font-size: 1vw; */
 }

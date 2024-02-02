@@ -121,7 +121,7 @@ const Projects = () => {
                             {/* <span className='ProjectContainerTextTitle'>Whats the password?</span> */}
                             <ul className='ProjectContainerTextList'>
                                 <li>
-                                    A fun password generator...where there are far too many rules.
+                                    A fun password generator ...where there are far too many rules.
                                 </li>
                                 <li>
                                     Use of Apis
