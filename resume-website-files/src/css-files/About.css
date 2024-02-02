@@ -39,7 +39,7 @@
 
     /* Media query to set a minimum font size */
     @media (min-width: 950px) {
-        font-size: 1vw; /* Set a specific minimum font size for wider screens */
+        font-size: 0.9vw; /* Set a specific minimum font size for wider screens */
     }
 }
 

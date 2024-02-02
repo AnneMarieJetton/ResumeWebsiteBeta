@@ -38,14 +38,12 @@ const Title = () => {
                 </div>
             </div>
             <div className= 'MainTextTitleRight'>
-                {/* <Moon/> */}
                 <Canvas>
                     <Suspense fallback={null}>
                         <Moon/>
                     </Suspense>
                 </Canvas>
             </div>
-            {/* <Moon/> */}
         </div>
     )
 }

@@ -27,14 +27,14 @@ function Home() {
             
             :
 
-            <div className='main__right__parent'>
+            <>
               <Header />
               <div className='main__right'>
                 <MainText/>
                 <StarsBackdrop/>
                 <Spaceship/>
               </div>
-            </div>
+            </>
 
             }
         </div>

@@ -6,7 +6,8 @@ const Spaceship = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0, angle: 0 });
   const requestRef = useRef();
   const previousTimeRef = useRef();
-  const navbarRef = useRef(0.1 * window.innerWidth);
+  // const navbarRef = useRef(0.1 * window.innerWidth);
+  const navbarRef = useRef(200);
 
   useEffect(() => {
     const speedFactor = 0.02; // Adjust the speed (0.02 is an example)
@@ -43,7 +44,8 @@ const Spaceship = () => {
     };
 
     const handleResize = () => {
-      navbarRef.current = 0.1 * window.innerWidth;
+      // navbarRef.current = 0.1 * window.innerWidth;
+      navbarRef.current = 200;
     };
 
     document.addEventListener('mousemove', handleMouseMove);
