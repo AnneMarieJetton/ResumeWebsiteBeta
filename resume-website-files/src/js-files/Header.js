@@ -11,7 +11,6 @@ function Header() {
         <nav className="header">
 
             <div className="logo__parent header__anim__1">
-            {/* <div className="fade__in__intro"> */}
                 <img className="header__logo" src={moonLogo} alt="moon" />
                 <span className="header__logo__text__1">Anne</span>
                 <span className="header__logo__text__2">Software Developer</span>
