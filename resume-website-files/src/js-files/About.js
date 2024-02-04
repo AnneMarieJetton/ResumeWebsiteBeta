@@ -1,9 +1,11 @@
 import '../css-files/About.css';
 
 import Green from '../other-files/green_color.png';
-import Arthur from '../other-files/sir_arthur_1.png';
+import Arthur from '../other-files/sir_arthur_square.png';
 
 import React, { useEffect, useState , useRef} from 'react';
+
+import AboutCard from './AboutCard';
 
 const About = () => {
 
@@ -31,10 +33,9 @@ const About = () => {
     const calculateFontSize = (minFontSize, maxFontSize) => {
         const minContainerWidth = 750;
       
-        // Adjust the scaleFactor based on your requirements
-        const scaleFactor = (Math.max(minContainerWidth, divWidth) / 750) * 2.5; // Using 750 as the reference width
+        const scaleFactor = (Math.max(minContainerWidth, divWidth) / 750) * 2.5;
       
-        const fontSize = minFontSize * scaleFactor; // Assuming the initial font size is 10px
+        const fontSize = minFontSize * scaleFactor;
       
         return Math.min(maxFontSize, Math.max(minFontSize, fontSize)) + 'px';
     };
@@ -52,36 +53,16 @@ const About = () => {
             <div className='MainTextAboutBody' style={{ fontSize: calculateFontSize(4, 20) }}>
                 <div className='MainTextAboutBodyCardsParent'>
                     <div className='MainTextAboutBodyCardColumn'>
-                        <div className='MainTextAboutBodyCardParent '>
-                            <div className='MainTextAboutBodyCard'>
-                                <div className='MainTextAboutBodyCardFront'></div>
-                                <div className='MainTextAboutBodyCardBack'>
-                                    <div className="MainTextAboutBodyCardBackText">
-                                        My favorite holiday is Halloween.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='MainTextAboutBodyCardParent'>
-                            <div className='MainTextAboutBodyCardFixed'>
-                                <div className='MainTextAboutBodyCardChosenCard'>
-                                    I was born and raised in Orlando, Florida.
-                                </div>
-                            </div>
-                        </div>
-                        <div className='MainTextAboutBodyCardParent'>
-                            <div className='MainTextAboutBodyCard'>
-                                <div className='MainTextAboutBodyCardFront'></div>
-                                <div className='MainTextAboutBodyCardBack'>
-                                    <div className="MainTextAboutBodyCardBackText">
-                                        I have a cat named Sir Arthur. take a look! &rarr;
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <AboutCard CardBackText={'My favorite holiday is Halloween.'} Chosen={false} />
+                        <AboutCard CardBackText={'I was born and raised in Orlando, Florida.'} Chosen={true} />
+                        <AboutCard CardBackText={'I have a cat named Sir Arthur. Take a look! \u2192'} Chosen={false} />
                     </div>
                     <div className='MainTextAboutBodyCardColumn'>
-                        <div className='MainTextAboutBodyCardParent'>
+                        <AboutCard CardBackText={'Hi, I\'m Anne, a software developer.'} Chosen={true} />
+                        <AboutCard CardBackText={'I love creepy video games like \'Little Nightmares\'.'} Chosen={false} />
+                        <AboutCard CardBackText={<img src={Arthur} alt="Arthur" />} Chosen={false} />
+
+                        {/* <div className='MainTextAboutBodyCardParent'>
                             <div className='MainTextAboutBodyCardFixed'>
                                 <div className='MainTextAboutBodyCardChosenCard'>
                                     Hi, I'm Anne, a software developer.
@@ -107,153 +88,32 @@ const About = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className='MainTextAboutBodyCardColumn'>
-                        <div className='MainTextAboutBodyCardParent'>
-                            <div className='MainTextAboutBodyCard'>
-                                <div className='MainTextAboutBodyCardFront'></div>
-                                <div className='MainTextAboutBodyCardBack'>
-                                    <div className="MainTextAboutBodyCardBackText">
-                                        Glacier National Park is my favorite park.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='MainTextAboutBodyCardParent'>
-                            <div className='MainTextAboutBodyCard'>
-                                <div className='MainTextAboutBodyCardFront'></div>
-                                <div className='MainTextAboutBodyCardBack'>
-                                    <div className="MainTextAboutBodyCardBackText">
-                                        I really do hate tomatoes.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='MainTextAboutBodyCardParent'>
-                            <div className='MainTextAboutBodyCardFixed'>
-                                <div className='MainTextAboutBodyCardChosenCard'>
-                                    I'm a fast learner, and am always willing to learn a new skill.
-                                </div>
-                            </div>
-                        </div>
+                        <AboutCard CardBackText={'Glacier National Park is my favorite park.'} Chosen={false} />
+                        <AboutCard CardBackText={'I really do hate tomatoes.'} Chosen={false} />
+                        <AboutCard CardBackText={'I\'m a fast learner, and am always willing to learn a new skill.'} Chosen={true} />
                     </div>
                     <div className='MainTextAboutBodyCardColumn'>
-                        <div className='MainTextAboutBodyCardParent'>
-                            <div className='MainTextAboutBodyCardFixed'>
-                                <div className='MainTextAboutBodyCardChosenCard'>
-                                    I enjoy working with others, and collaberating on projects.
-                                </div>
-                            </div>
-                        </div>
-                        <div className='MainTextAboutBodyCardParent'>
-                            <div className='MainTextAboutBodyCard'>
-                                <div className='MainTextAboutBodyCardFront'></div>
-                                <div className='MainTextAboutBodyCardBack'>
-                                    <div className="MainTextAboutBodyCardBackText">
-                                        I was the valedictorian of my high school class.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='MainTextAboutBodyCardParent'>
-                            <div className='MainTextAboutBodyCard'>
-                                <div className='MainTextAboutBodyCardFront'></div>
-                                <div className='MainTextAboutBodyCardBack'>
-                                    <div className="MainTextAboutBodyCardBackText">
-                                        My favorite dessert is crepes with cream cheese filling.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <AboutCard CardBackText={'I enjoy working with others, and collaberating on projects.'} Chosen={true} />
+                        <AboutCard CardBackText={'I was the valedictorian of my high school class.'} Chosen={false} />
+                        <AboutCard CardBackText={'My favorite dessert is crepes with cream cheese filling.'} Chosen={false} />
                     </div>
                     <div className='MainTextAboutBodyCardColumn'>
-                        <div className='MainTextAboutBodyCardParent'>
-                            <div className='MainTextAboutBodyCard'>
-                                <div className='MainTextAboutBodyCardFront'></div>
-                                <div className='MainTextAboutBodyCardBack'>
-                                    <div className="MainTextAboutBodyCardBackText">
-                                        I love reading, and the smell of a new book.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='MainTextAboutBodyCardParent'>
-                            <div className='MainTextAboutBodyCard'>
-                                <div className='MainTextAboutBodyCardFront'></div>
-                                <div className='MainTextAboutBodyCardBack'>
-                                    <div className="MainTextAboutBodyCardBackText">
-                                        My favorite coding project is Unfair Chess. You can find it below!
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='MainTextAboutBodyCardParent'>
-                            <div className='MainTextAboutBodyCard'>
-                                <div className='MainTextAboutBodyCardFront'></div>
-                                <div className='MainTextAboutBodyCardBack'>
-                                    <div className="MainTextAboutBodyCardBackText">
-                                        One day, I would love to own a 1967 Chevy Impala.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <AboutCard CardBackText={'I love the smell of a new book.'} Chosen={false} />
+                        <AboutCard CardBackText={'My favorite coding project is Unfair Chess. You can find it below!'} Chosen={false} />
+                        <AboutCard CardBackText={'One day, I would love to own a 1967 Chevy Impala.'} Chosen={false} />
                     </div>
                     <div className='MainTextAboutBodyCardColumn'>
-                        <div className='MainTextAboutBodyCardParent'>
-                            <div className='MainTextAboutBodyCard'>
-                                <div className='MainTextAboutBodyCardFront'></div>
-                                <div className='MainTextAboutBodyCardBack'>
-                                    <div className="MainTextAboutBodyCardBackText">
-                                        My favorite color is this specific shade of green. &rarr; 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='MainTextAboutBodyCardParent'>
-                            <div className='MainTextAboutBodyCard'>
-                                <div className='MainTextAboutBodyCardFront'></div>
-                                <div className='MainTextAboutBodyCardBack'>
-                                    <div className="MainTextAboutBodyCardBackText">
-                                        I think most cakes are too dry.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='MainTextAboutBodyCardParent'>
-                            <div className='MainTextAboutBodyCardFixed'>
-                                <div className='MainTextAboutBodyCardChosenCard'>
-                                    I deliver clean and efficient code in a timely manner.
-                                </div>
-                            </div>
-                        </div>
+                        <AboutCard CardBackText={'My favorite color is this specific shade of green. \u2192'} Chosen={false} />
+                        <AboutCard CardBackText={'I think most cakes are too dry.'} Chosen={false} />
+                        <AboutCard CardBackText={'I deliver clean and efficient code in a timely manner.'} Chosen={true} />
                     </div>
                     <div className='MainTextAboutBodyCardColumn'>
-                        <div className='MainTextAboutBodyCardParent'>
-                            <div className='MainTextAboutBodyCard'>
-                                <div className='MainTextAboutBodyCardFront'></div>
-                                <div className='MainTextAboutBodyCardBack'>
-                                    <div className="MainTextAboutBodyCardBackText">
-                                        <img src={Green} alt="Green Image" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='MainTextAboutBodyCardParent'>
-                            <div className='MainTextAboutBodyCardFixed'>
-                                <div className='MainTextAboutBodyCardChosenCard'>I'm never afraid to take on a new challenge.</div>
-                            </div>
-                        </div>
-                        <div className='MainTextAboutBodyCardParent'>
-                            <div className='MainTextAboutBodyCard'>
-                                <div className='MainTextAboutBodyCardFront'></div>
-                                <div className='MainTextAboutBodyCardBack'>
-                                    <div className="MainTextAboutBodyCardBackText">
-                                        I love victorian architecture.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <AboutCard CardBackText={<img src={Green} alt="Green Image" />} Chosen={false} />
+                        <AboutCard CardBackText={'I\'m never afraid to take on a new challenge.'} Chosen={true} />
+                        <AboutCard CardBackText={'I love victorian architecture.'} Chosen={false} />
                     </div>
                 </div>
             </div>
