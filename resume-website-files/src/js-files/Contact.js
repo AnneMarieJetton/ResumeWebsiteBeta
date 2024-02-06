@@ -1,53 +1,44 @@
+//-------Files-----------
 import '../css-files/Contact.css';
 
-// import React, { useEffect, useState } from 'react';
-
-import React, { useRef, useEffect, useState } from 'react';
-import emailjs from '@emailjs/browser';
-
+//-------Resources-------
 import linkedinLogo from '../other-files/linkedin_white_logo.png'
 import githubLogo from '../other-files/github_white_logo.png'
 import emailLogo from '../other-files/email_white_logo.png'
 
+//-------Other-----------
+import React, { useRef, useEffect, useState } from 'react';
+import emailjs from '@emailjs/browser';
 
+
+//Contact section of the webpage
 const Contact = () => {
 
-    const [email, setEmail] = useState('');
-    const [name, setName] = useState('')
-    const [emailContent, setEmailContent] = useState('');
 
-    const handleEmailChange = (event) => {
-        setEmail(event.target.value);
-    };
-
-    const handleNameChange = (event) => {
-        setName(event.target.value);
-    };
-
-    const handleContentChange = (event) => {
-        setEmailContent(event.target.value);
-    };
-
-    // const handleSendEmail = () => {
-    //     // Implement the logic to send the email using the 'email' and 'emailContent' states
-    //     console.log('Sending email:', email);
-    //     console.log('Email content:', emailContent);
-    // };
+    //-------Const Variables------
 
     const form = useRef();
 
-    const sendEmail = (e) => {
-    e.preventDefault();
 
-    emailjs.sendForm('service_xbigsec', 'template_tdfjry8', form.current, 'WJzEQDf4WXQURNtfA')
-        .then((result) => {
-            console.log(result.text);
-            console.log("message sent")
-            e.target.reset();
-        }, (error) => {
-            console.log(error.text);
-        });
+    //-------Const Methods--------
+
+    //Logic for sending an email from the email box
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_xbigsec', 'template_tdfjry8', form.current, 'WJzEQDf4WXQURNtfA')
+            .then((result) => {
+                console.log(result.text);
+                console.log("message sent")
+                e.target.reset();
+            }, (error) => {
+                console.log(error.text);
+            }
+        );
     };
+
+
+    //----------Content--------
 
     return (
         <div className= 'MainTextContactParent' id="Contact">
@@ -64,7 +55,6 @@ const Contact = () => {
                 <span>e</span>
             </div>
             <div className='MainTextContactBody'>
-
                 <form className='MainTextEmailParent' ref={form} onSubmit={sendEmail}>
                     <label className='EmailInputLabel'>Your Name:</label>
                     <div className='MainTextEmailDestinationInput'>
@@ -80,7 +70,6 @@ const Contact = () => {
                     </div>
                     <input className="SendButton" type="submit" value="Send" />
                 </form>
-
                 <div className='MainTextContactMessage'>
                     <div className='MainTextContactMessageDiv'>
                         <div className='ContactImage'>
@@ -107,40 +96,12 @@ const Contact = () => {
                         <span>Send me an email!</span>
                     </div>
                 </div>
-
             </div>
         </div>
     )
 }
 
+
+//----------Export----------
+
 export default Contact;
-
-// import React, { useRef } from 'react';
-// import emailjs from '@emailjs/browser';
-
-// export const ContactUs = () => {
-//   const form = useRef();
-
-//   const sendEmail = (e) => {
-//     e.preventDefault();
-
-//     emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-//       .then((result) => {
-//           console.log(result.text);
-//       }, (error) => {
-//           console.log(error.text);
-//       });
-//   };
-
-//   return (
-//     <form ref={form} onSubmit={sendEmail}>
-//       <label>Name</label>
-//       <input type="text" name="user_name" />
-//       <label>Email</label>
-//       <input type="email" name="user_email" />
-//       <label>Message</label>
-//       <textarea name="message" />
-//       <input type="submit" value="Send" />
-//     </form>
-//   );
-// };

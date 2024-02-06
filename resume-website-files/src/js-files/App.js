@@ -1,15 +1,24 @@
+//-------Files-----------
+import '../css-files/App.css';
+import Home from './Home';
+
+//-------Resources-------
+import moonFavicon from '../other-files/transparent_moon.png';
+
+//-------Other-----------
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import logo from '../other-files/logo.svg';
-import moonFavicon from '../other-files/transparent_moon.png';
-import '../css-files/App.css';
-import Home from './Home';
-import PreLoader from './PreLoader';
-
+//Main app
 function App() {
 
+
+  //------Function Calls-----
+
   setFavicon(moonFavicon);
+
+
+  //----------Content--------
 
   return (
       <Router>
@@ -20,10 +29,17 @@ function App() {
         </div>
       </Router>
   );
+
 }
 
+
+//-------Function Definitions-------
+
+//Changes the favicon to the specified image.
 function setFavicon(url) {
+
   const link = document.querySelector("link[rel~='icon']");
+
   if (link) {
     link.href = url;
   } else {
@@ -32,7 +48,10 @@ function setFavicon(url) {
     newLink.href = url;
     document.head.appendChild(newLink);
   }
+
 }
 
+
+//----------Export----------
 
 export default App;

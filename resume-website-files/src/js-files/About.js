@@ -1,23 +1,49 @@
+//-------Files-----------
 import '../css-files/About.css';
+import AboutCard from './AboutCard';
 
+//-------Resources-------
 import Green from '../other-files/green_color.png';
 import Arthur from '../other-files/sir_arthur_square.png';
 
+//-------Other-----------
 import React, { useEffect, useState , useRef} from 'react';
 
-import AboutCard from './AboutCard';
 
+//About section of the webpage
 const About = () => {
 
+
+    //-------Const Variables------
+    
     const mainTextAboutParentRef = useRef(null);
     const [divWidth, setDivWidth] = useState(0);
 
+
+    //-------Const Methods--------
+    
+    //Detects parent size, for rezizing purposes.
     const handleResize = () => {
         if (mainTextAboutParentRef.current) {
             setDivWidth(mainTextAboutParentRef.current.clientWidth);
         }
     };
 
+    //Uses parent size to dynamically update the font to an appropriate size.
+    const calculateFontSize = (minFontSize, maxFontSize) => {
+        const minContainerWidth = 750;
+      
+        const scaleFactor = (Math.max(minContainerWidth, divWidth) / 750) * 2.5;
+      
+        const fontSize = minFontSize * scaleFactor;
+      
+        return Math.min(maxFontSize, Math.max(minFontSize, fontSize)) + 'px';
+    };
+
+
+    //-------UseEffect--------
+
+    //UseEffect for resizing
     useEffect(() => {
         if (mainTextAboutParentRef.current) {
             setDivWidth(mainTextAboutParentRef.current.clientWidth);
@@ -30,15 +56,8 @@ const About = () => {
         };
     }, [mainTextAboutParentRef]);
 
-    const calculateFontSize = (minFontSize, maxFontSize) => {
-        const minContainerWidth = 750;
-      
-        const scaleFactor = (Math.max(minContainerWidth, divWidth) / 750) * 2.5;
-      
-        const fontSize = minFontSize * scaleFactor;
-      
-        return Math.min(maxFontSize, Math.max(minFontSize, fontSize)) + 'px';
-    };
+
+    //----------Content--------
 
     return (
         <div className= 'MainTextAboutParent' id="About" ref={mainTextAboutParentRef}>
@@ -61,34 +80,6 @@ const About = () => {
                         <AboutCard CardBackText={'Hi, I\'m Anne, a software developer.'} Chosen={true} />
                         <AboutCard CardBackText={'I love creepy video games like \'Little Nightmares\'.'} Chosen={false} />
                         <AboutCard CardBackText={<img src={Arthur} alt="Arthur" />} Chosen={false} />
-
-                        {/* <div className='MainTextAboutBodyCardParent'>
-                            <div className='MainTextAboutBodyCardFixed'>
-                                <div className='MainTextAboutBodyCardChosenCard'>
-                                    Hi, I'm Anne, a software developer.
-                                </div>
-                            </div>
-                        </div>
-                        <div className='MainTextAboutBodyCardParent'>
-                            <div className='MainTextAboutBodyCard'>
-                                <div className='MainTextAboutBodyCardFront'></div>
-                                <div className='MainTextAboutBodyCardBack'>
-                                    <div className="MainTextAboutBodyCardBackText">
-                                        I love creepy video games like 'Little Nightmares'.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='MainTextAboutBodyCardParent'>
-                            <div className='MainTextAboutBodyCard'>
-                                <div className='MainTextAboutBodyCardFront'></div>
-                                <div className='MainTextAboutBodyCardBack'>
-                                    <div className="MainTextAboutBodyCardBackText" style={{overflow: 'hidden'}}>
-                                        <img src={Arthur} alt="Arthur" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
                     </div>
                     <div className='MainTextAboutBodyCardColumn'>
                         <AboutCard CardBackText={'Glacier National Park is my favorite park.'} Chosen={false} />
@@ -120,5 +111,8 @@ const About = () => {
         </div>
     )
 }
+
+
+//----------Export----------
 
 export default About;

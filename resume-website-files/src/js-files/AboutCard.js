@@ -1,11 +1,14 @@
+//Files
 import '../css-files/AboutCard.css';
 
-import Green from '../other-files/green_color.png';
-import Arthur from '../other-files/sir_arthur_1.png';
+//Resources
 
+//Other
 import React, { useEffect, useState , useRef} from 'react';
 
+//Card in the about section. Will either be a regular card or a chosen card depending on the props.
 const AboutCard = (props) => {
+
     const { CardBackText, Chosen } = props;
 
     const renderContent = () => {
@@ -36,7 +39,7 @@ const AboutCard = (props) => {
     };
 
     return renderContent();
-    
+
 }
 
 export default AboutCard;
