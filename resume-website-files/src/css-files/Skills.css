@@ -1,25 +1,12 @@
+/* ------------------------------------Skills------------------------------- */
 .MainTextSkillsParent{
-    /* min-height: 100%; */
     padding-top: 5%;
     padding-bottom: 5%;
     min-width: 750px;
 }
 
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0.8; /* Adjust this value as needed */
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 .MainTextSkillsTitle{
     margin-top: 10px;
-    /* margin-bottom: 10%; */
     color: white;
     font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
     font-size: 50px;
@@ -33,86 +20,47 @@
     font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
     font-size: 20px;
     margin-top: 40px;
-    /* margin-bottom: 10%; */
-    display: flex; /* Use flexbox */
+    display: flex;
     flex-direction: row;
 }
 
 .MainTextSkillsBodyRight,
 .MainTextSkillsBodyLeft {
     flex: 1;
-    display: flex; /* Use flexbox */
+    display: flex;
     flex-direction: column;
     position: relative;
     align-items: center;
 }
 
-.MainTextSkillsBodyRight {
-    /* margin-left: 10%; */
-}
+/* ------------------------------------Skills Content------------------------------- */
 
-.MainTextLanguagesSubtitle, .MainTextToolsSubtitle{
-    /* display: flex; */
+.MainTextLanguagesSubtitle,
+.MainTextToolsSubtitle{
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
     color: white;
     font-weight: bold;
-    /* color:#cecece; */
-    flex: 1;
-    /* position: relative; */
-    position: absolute;
-    animation: fade linear both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 50%;
-    min-width: 0;
-    /* font-size: 1.2vw; */
-}
-
-.CenteredSubtitles {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
-    color: white;
-    font-weight: bold;
-    position: absolute;
-    animation: fade linear both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 50%;
-    min-width: 0;
-}
-
-/* .MainTextSkillsBodyList{
-    color:#cecece;
-}
-
-.MainTextSkillsBodyList li{
-    margin-top: 5%;
-} */
-
-.MainTextSkillsBodyLeft span, .MainTextSkillsBodyRight span{
-    /* color:#cecece;
     flex: 1;
     position: absolute;
     animation: fade linear both;
     animation-timeline: view();
     animation-range: entry 0% cover 50%;
     min-width: 0;
-    font-size: 1vw; */
 }
 
 .MainTextSkillsBodyItem{
     color:#cecece;
     flex: 1;
-    /* position: relative; */
     position: absolute;
     animation: fade linear both;
     animation-timeline: view();
     animation-range: entry 0% cover 50%;
     min-width: 0;
-    /* font-size: 1vw; */
 }
+
+/* ------------------------------------Astronaught------------------------------- */
 
 .AstronaughtParent {
     flex: 1;
@@ -131,11 +79,25 @@
     animation: floatAnimation 3s infinite alternate ease-in-out;
 }
 
+/* ------------------------------------Effects------------------------------- */
+
 @keyframes floatAnimation {
     0% {
       transform: translateY(0);
     }
     100% {
-      transform: translateY(-20px); /* Adjust the value to control the floating range */
+      transform: translateY(-20px);
     }
-  }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}

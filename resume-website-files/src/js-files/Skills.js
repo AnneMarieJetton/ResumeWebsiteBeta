@@ -1,19 +1,48 @@
+//-------Files-----------
 import '../css-files/Skills.css';
 
-import React, { useEffect, useState, useRef } from 'react';
+//-------Resources-------
 import Astronaught from '../other-files/true_astronaught_2_transparent.png';
 
+//-------Other-----------
+import React, { useEffect, useState, useRef } from 'react';
+
+
+//Skills section of the webpage
 const Skills = () => {
 
+
+    //-------Const Variables------
+    
     const mainTextSkillsParentRef = useRef(null);
     const [divWidth, setDivWidth] = useState(0);
 
+
+    //-------Const Methods--------
+
+    //Detects parent size, for rezizing purposes.
     const handleResize = () => {
         if (mainTextSkillsParentRef.current) {
             setDivWidth(mainTextSkillsParentRef.current.clientWidth);
         }
     };
 
+    //Uses parent size to dynamically update the font to an appropriate size.
+    const calculateFontSize = (minFontSize, maxFontSize) => {
+        const minContainerWidth = 750;
+      
+        // Adjust the scaleFactor based on your requirements
+        const scaleFactor = (Math.max(minContainerWidth, divWidth) / 750) * 2.5; // Using 750 as the reference width
+      
+        const fontSize = minFontSize * scaleFactor; // Assuming the initial font size is 10px
+      
+        return Math.min(maxFontSize, Math.max(minFontSize, fontSize)) + 'px';
+    };
+
+
+    //-------UseEffect--------
+
+    //UseEffect for resizing
     useEffect(() => {
         if (mainTextSkillsParentRef.current) {
             setDivWidth(mainTextSkillsParentRef.current.clientWidth);
@@ -26,16 +55,8 @@ const Skills = () => {
         };
     }, [mainTextSkillsParentRef]);
 
-    const calculateFontSize = (minFontSize, maxFontSize) => {
-        const minContainerWidth = 750;
-      
-        // Adjust the scaleFactor based on your requirements
-        const scaleFactor = (Math.max(minContainerWidth, divWidth) / 750) * 2.5; // Using 750 as the reference width
-      
-        const fontSize = minFontSize * scaleFactor; // Assuming the initial font size is 10px
-      
-        return Math.min(maxFontSize, Math.max(minFontSize, fontSize)) + 'px';
-    };
+    
+    //----------Content--------
 
     return (
         <div className= 'MainTextSkillsParent' id="Skills" ref={mainTextSkillsParentRef}>
@@ -50,9 +71,7 @@ const Skills = () => {
             </div>
             <div className='MainTextSkillsBody' style={{ fontSize: calculateFontSize(4, 20) }}>
                 <div className='MainTextSkillsBodyLeft'>
-                    {/* <div className='CenteredSubtitles'> */}
-                        <span className='MainTextLanguagesSubtitle'>Languages</span>
-                    {/* </div> */}
+                    <span className='MainTextLanguagesSubtitle'>Languages</span>
                     <span className='MainTextSkillsBodyItem' style={{ left: '13.33%', top: '10%' }}>Java</span>
                     <span className='MainTextSkillsBodyItem' style={{ left: '33.33%', top: '25%' }}>Python</span>
                     <span className='MainTextSkillsBodyItem' style={{ left: '83.33%', top: '40%' }}>C</span>
@@ -65,9 +84,7 @@ const Skills = () => {
                     <img className="Astronaught" src={Astronaught} alt="astronaught" />
                 </div>
                 <div className='MainTextSkillsBodyRight'>
-                    {/* <div className='CenteredSubtitles'> */}
-                        <span className='MainTextToolsSubtitle' style={{}}>Tools</span>
-                    {/* </div> */}
+                    <span className='MainTextToolsSubtitle' >Tools</span>
                     <span className='MainTextSkillsBodyItem' style={{ left: '33.33%', top: '10%' }}>React.JS</span>
                     <span className='MainTextSkillsBodyItem' style={{ left: '63.33%', top: '18%' }}>THREE.JS</span>
                     <span className='MainTextSkillsBodyItem' style={{ left: '23.33%', top: '26%' }}>Vue</span>
@@ -80,11 +97,13 @@ const Skills = () => {
                     <span className='MainTextSkillsBodyItem' style={{ left: '73.33%', top: '82%' }}>Stripe</span>
                     <span className='MainTextSkillsBodyItem' style={{ left: '13.33%', top: '90%' }}>Pygame</span>
                     <span className='MainTextSkillsBodyItem' style={{ left: '63.33%', top: '98%' }}>Postman</span>
-                    {/* adding more left causes scroll bar to appear on bottom? fix. */}
                 </div>
             </div>
         </div>
     )
 }
+
+
+//----------Export----------
 
 export default Skills;

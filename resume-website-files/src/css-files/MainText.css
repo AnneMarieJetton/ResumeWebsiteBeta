@@ -1,7 +1,6 @@
+/* ------------------------------------MainText------------------------------- */
 .MainTextParent{
     background: transparent;
-    /* background-color: red; */
-    /* width: 80%; */
     height: 100vh;
     position: fixed;
     left: 200px;
@@ -13,13 +12,13 @@
 }
 
 .MainTextParent::-webkit-scrollbar {
-    width: 12px; /* Set the width of the scrollbar */
+    width: 12px;
 }
 
 .MainTextParent::-webkit-scrollbar-thumb {
-    background-color: #0e0e0e; /* Make the thumb transparent */
+    background-color: #0e0e0e;
 }
 
 .MainTextParent::-webkit-scrollbar-track {
-    background-color: black; /* Make the track transparent */
+    background-color: black;
 }

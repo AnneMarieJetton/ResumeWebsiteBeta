@@ -1,7 +1,14 @@
-import React, { useState, useRef, useEffect } from 'react';
+//-------Files-----------
 import '../css-files/Spaceship.css';
+
+//-------Resources-------
 import SpaceshipImage from '../other-files/spaceship_1_rotated.png';
 
+//-------Other-----------
+import React, { useState, useRef, useEffect } from 'react';
+
+
+//Spaceship that acts as the cursor
 const Spaceship = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0, angle: 0 });
   const requestRef = useRef();

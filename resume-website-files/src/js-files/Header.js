@@ -1,12 +1,21 @@
-import React from "react"
+//-------Files-----------
 import '../css-files/Header.css';
+
+//-------Resources-------
 import moonLogo from '../other-files/transparent_moon.png';
 import linkedinLogo from '../other-files/linkedin_white_logo.png'
 import githubLogo from '../other-files/github_white_logo.png'
 import emailLogo from '../other-files/email_white_logo.png'
 
+//-------Other-----------
+import React from "react"
 
+
+//NavBar section of the webpage
 function Header() {
+
+    //----------Content--------
+
     return (
         <nav className="header">
 
@@ -73,6 +82,10 @@ function Header() {
     )
 }
 
+
+//-------Function Definitions-------
+
+//Controls quick-scroll behavior from navbar
 function scrollToElement(elementId) {
     const element = document.getElementById(elementId);
   
@@ -84,5 +97,8 @@ function scrollToElement(elementId) {
       });
     }
 }
+
+
+//----------Export----------
 
 export default Header;

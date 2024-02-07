@@ -1,23 +1,17 @@
-import React, { useState, useEffect } from "react";
-import BounceLoader from "react-spinners/BounceLoader";
+//-------Files-----------
 import '../css-files/PreLoader.css';
 
+//-------Other-----------
+import React from "react";
+import BounceLoader from "react-spinners/BounceLoader";
+
+//Preloader while page is loading
 const PreLoader = () => {
 
-  // const [loading, setLoading] = useState(false);
 
-  // useEffect(() => {
-  //   setLoading(true)
-  //   setTimeout(() => {
-  //     setLoading(false)
-  //   }, 3500)
-  // }, [])
+  //----------Content--------
 
   return (
-    // loading 
-    
-    // ?
-
     <div className="preLoaderSpinner">
       <div>
         <BounceLoader
@@ -27,16 +21,11 @@ const PreLoader = () => {
         />
       </div>
     </div>
-
-    // :
-
-    // <div className="welcomeTextParent">
-    //   <div className="welcomeText">
-    //     Welcome
-    //   </div>
-    // </div>
   )
 
 };
+
+
+//----------Export----------
 
 export default PreLoader;

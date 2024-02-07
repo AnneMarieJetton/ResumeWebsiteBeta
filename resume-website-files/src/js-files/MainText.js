@@ -1,5 +1,5 @@
+//-------Files-----------
 import '../css-files/MainText.css';
-
 import Title from './Title';
 import About from './About';
 import Skills from './Skills';
@@ -8,10 +8,13 @@ import Experience from './Experience';
 import Education from './Education';
 import Contact from './Contact';
 
-import React, { useEffect, useState } from 'react';
+//-------Other-----------
+import React from 'react';
 
+//Container for righthand section of the webpage
 const MainText = () => {
 
+    //----------Content--------
     return(
         <div className='MainTextParent'>
             <Title/>
@@ -25,5 +28,8 @@ const MainText = () => {
     )
 
 }
+
+
+//----------Export----------
 
 export default MainText;

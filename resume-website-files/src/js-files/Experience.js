@@ -1,8 +1,14 @@
+//-------Files-----------
 import '../css-files/Experience.css';
 
-import React, { useEffect, useState } from 'react';
+//-------Other-----------
+import React from 'react';
 
+//Experience section of the webpage
 const Experience = () => {
+
+    //----------Content--------
+
     return(
         <div className= 'MainTextExperienceParent' id="Experience">
             <div className='MainTextExperienceTitle MainTextAnimation'>
@@ -65,5 +71,8 @@ const Experience = () => {
         </div>
     )
 }
+
+
+//----------Export----------
 
 export default Experience;

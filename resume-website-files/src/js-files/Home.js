@@ -1,44 +1,60 @@
-import React, { useEffect, useState } from 'react';
-import Header from './Header';
+//-------Files-----------
 import "../css-files/Home.css";
+import Header from './Header';
 import PreLoader from './PreLoader';
-import Moon from './Moon';
 import StarsBackdrop from './StarsBackdrop';
 import MainText from './MainText';
 import Spaceship from './Spaceship';
 
+//-------Other-----------
+import React, { useEffect, useState } from 'react';
+
+
+//Container for the entire webpage
 function Home() {
-    const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-      setLoading(true)
-      setTimeout(() => {
-        setLoading(false)
-      }, 3500)
-    }, [])
+  //-------Const Variables------
+  const [loading, setLoading] = useState(true);
 
-    return (
-        <div className="home">
-            {loading 
-            
-            ? 
-            
-            <PreLoader />
-            
-            :
 
-            <>
-              <Header />
-              <div className='main__right'>
-                <MainText/>
-                <StarsBackdrop/>
-                <Spaceship/>
-              </div>
-            </>
+  //-------UseEffect--------
 
-            }
-        </div>
-    )        
+  //UseEffect fot the preloader
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 3500)
+  }, [])
+
+
+  //----------Content--------
+
+  return (
+    <div className="home">
+        {loading 
+        
+        ? 
+        
+        <PreLoader />
+        
+        :
+
+        <>
+          <Header />
+          <div className='main__right'>
+            <MainText/>
+            <StarsBackdrop/>
+            <Spaceship/>
+          </div>
+        </>
+
+        }
+    </div>
+  )        
 }
+
+
+//----------Export----------
 
 export default Home
