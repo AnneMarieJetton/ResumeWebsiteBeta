@@ -1,16 +1,18 @@
-import React, { useState, useEffect, useRef } from "react";
-import { useLoader, useFrame } from "@react-three/fiber";
+//-------Files-----------
 import '../css-files/StarsBackdrop.css';
+
+//-------Other-----------
+import React from "react";
 import { Canvas } from "react-three-fiber";
 import { Suspense } from "react";
-import MoonTextureMap from '../other-files/8k_lunar_surface.jpg';
-import { TextureLoader } from "three";
-import { OrbitControls, Stars } from "@react-three/drei";
+import { Stars } from "@react-three/drei";
 
+
+//Stars backdrop that sits behind the entire webpage.
 const StarsBackdrop = () => {
-    // const [moonMap] = useLoader(TextureLoader, [MoonTextureMap]);
-    // const moonRef = useRef();
 
+
+    //----------Content--------
     return (
         <div className="Stars__Parent">
             <Canvas>
@@ -27,6 +29,10 @@ const StarsBackdrop = () => {
             </Canvas>
         </div>
     );
+
 };
+
+
+//----------Export----------
 
 export default StarsBackdrop;

@@ -1,6 +1,7 @@
+/* ------------------------------------Title------------------------------- */
+
 .MainTextTitleParent{
     min-height: 100%;
-    /* padding-top: 10%; */
     display: flex; 
     flex-direction: row;
     position: relative;
@@ -10,11 +11,9 @@
 .MainTextTitleLeft {
   flex: 1;
   display: flex;
-  justify-content: center; /* Center horizontally */
-  /* align-items: center; Center vertically */
-  height: 100vh; /* Set the height of the container */
+  justify-content: center;
+  height: 100vh;
   flex-direction: column;
-  /* background-color: red; */
   min-width: 0;
 }
 
@@ -24,34 +23,17 @@
   justify-content: center;
   height: 100vh;
   flex-direction: column;
-  /* background-color: blue; */
   min-width: 0;
 }
 
 .MainTextTitle{
     color: white;
     font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
-    /* font-size: 150px; */
-    /* font-size: 82px; */
     animation: FadeIn 0.5s linear 1.6s forwards;
     opacity: 0;
-    /* font-size: 7.8vw; */
-
-    /* @media (min-width: 1070px) {
-      font-size: 7.8vw; 
-  } */
 }
 
-@keyframes FadeIn {
-    0% {
-        transform: translateY(-10%);
-        opacity: 0;
-      }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
+/* ------------------------------------Title Content------------------------------- */
 
 .MainTextAnimation span{
     display: inline-block;
@@ -66,34 +48,40 @@
     animation: blink 1s infinite;
 }
 
-@keyframes blink {
-    0% {
-      opacity: 1;
-    }
-    49% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    99% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-}
-
 .MainTextSubtitle{
     color: white;
     font-family: 'cursive', 'Lucida Handwriting', 'Courier New', sans-serif;
-    /* font-size: 50px; */
-    /* font-size: 28px; */
     animation: FadeIn 0.5s linear 2.2s forwards;
     opacity: 0;
-    /* font-size: 2.6vw; */
+}
 
-    /* @media (min-width: 1070px) {
-      font-size: 2.6vw;
-  } */
+/* ------------------------------------Effects------------------------------- */
+
+@keyframes FadeIn {
+  0% {
+      transform: translateY(-10%);
+      opacity: 0;
+    }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

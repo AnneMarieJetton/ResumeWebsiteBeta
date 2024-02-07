@@ -1,27 +1,48 @@
+//-------Files-----------
 import '../css-files/Title.css';
-
-// import React, { useEffect, useState } from 'react';
 import Moon from './Moon';
-
-import React, { useState, useEffect, useRef } from "react";
-import { useLoader, useFrame } from "@react-three/fiber";
 import '../css-files/Moon.css';
+
+//-------Other-----------
+import React, { useState, useEffect, useRef } from "react";
 import { Canvas } from "react-three-fiber";
 import { Suspense } from "react";
-import MoonTextureMap from '../other-files/8k_lunar_surface.jpg';
-import { TextureLoader } from "three";
-import { OrbitControls, Stars } from "@react-three/drei";
 
+
+//Title section of the webpage
 const Title = () => {
+
+
+    //-------Const Variables------
+    
     const mainTextTitleParentRef = useRef(null);
     const [divWidth, setDivWidth] = useState(0);
 
+
+    //-------Const Methods--------
+    
+    //Detects parent size, for rezizing purposes.
     const handleResize = () => {
         if (mainTextTitleParentRef.current) {
             setDivWidth(mainTextTitleParentRef.current.clientWidth);
         }
     };
 
+    //Uses parent size to dynamically update the font to an appropriate size.
+    const calculateFontSize = (minFontSize, maxFontSize) => {
+        const minContainerWidth = 750;
+      
+        // Adjust the scaleFactor based on your requirements
+        const scaleFactor = (Math.max(minContainerWidth, divWidth) / 750) * 2.5; // Using 750 as the reference width
+      
+        const fontSize = minFontSize * scaleFactor; // Assuming the initial font size is 10px
+      
+        return Math.min(maxFontSize, Math.max(minFontSize, fontSize)) + 'px';
+    };
+
+    //-------UseEffect--------
+
+    //UseEffect for resizing
     useEffect(() => {
         if (mainTextTitleParentRef.current) {
             setDivWidth(mainTextTitleParentRef.current.clientWidth);
@@ -34,17 +55,8 @@ const Title = () => {
         };
     }, [mainTextTitleParentRef]);
 
-    const calculateFontSize = (minFontSize, maxFontSize) => {
-        const minContainerWidth = 750;
-      
-        // Adjust the scaleFactor based on your requirements
-        const scaleFactor = (Math.max(minContainerWidth, divWidth) / 750) * 2.5; // Using 750 as the reference width
-      
-        const fontSize = minFontSize * scaleFactor; // Assuming the initial font size is 10px
-      
-        return Math.min(maxFontSize, Math.max(minFontSize, fontSize)) + 'px';
-    };
-  
+    //----------Content--------
+
     return (
         <div className="MainTextTitleParent" id="Home" ref={mainTextTitleParentRef}>
             <div className='MainTextTitleLeft'>
@@ -55,6 +67,7 @@ const Title = () => {
                 <span>l</span>
                 <span>o</span>
                 <span className='MainTextTitleUnderscore'>_</span>
+                {/* Hello_ */}
             </div>
             <div className='MainTextSubtitle MainTextAnimation' style={{ fontSize: calculateFontSize(10, 50) }}>
                 <span>I</span>
@@ -65,6 +78,7 @@ const Title = () => {
                 <span>n</span>
                 <span>n</span>
                 <span>e</span>
+                {/* I'm Anne*/}
             </div>
             </div>
             <div className='MainTextTitleRight'>
@@ -77,5 +91,8 @@ const Title = () => {
         </div>
     );
   };
+  
+
+  //----------Export----------
   
   export default Title;
