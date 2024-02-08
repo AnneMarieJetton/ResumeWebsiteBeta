@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/ResumeWebsite/static/css/main.20da3a9a.css",
+    "main.js": "/ResumeWebsite/static/js/main.b2c8ac1f.js",
+    "static/js/787.4be95ee4.chunk.js": "/ResumeWebsite/static/js/787.4be95ee4.chunk.js",
+    "static/media/transparent_moon.png": "/ResumeWebsite/static/media/transparent_moon.57e2674f946e0fbbc503.png",
+    "static/media/sir_arthur_square.png": "/ResumeWebsite/static/media/sir_arthur_square.7628e7215fd451cb56b1.png",
+    "static/media/green_color.png": "/ResumeWebsite/static/media/green_color.02dadb0662312be0e5fd.png",
+    "static/media/cpp_white_logo.png": "/ResumeWebsite/static/media/cpp_white_logo.6b131ee494d11a7e1f7b.png",
+    "static/media/8k_lunar_surface.jpg": "/ResumeWebsite/static/media/8k_lunar_surface.a2edaf8548e78714814b.jpg",
+    "static/media/true_astronaught_2_transparent.png": "/ResumeWebsite/static/media/true_astronaught_2_transparent.e8045f238db62e29d3f5.png",
+    "static/media/react_white_logo.png": "/ResumeWebsite/static/media/react_white_logo.870000b12376bf0220dc.png",
+    "static/media/java_white_logo.png": "/ResumeWebsite/static/media/java_white_logo.6b7af3436d9d540220af.png",
+    "static/media/python_white_logo.png": "/ResumeWebsite/static/media/python_white_logo.7278bca2712ee4a33413.png",
+    "static/media/ufo_again.png": "/ResumeWebsite/static/media/ufo_again.694bde3dc68666af12c0.png",
+    "static/media/email_white_logo.png": "/ResumeWebsite/static/media/email_white_logo.f4586d7b6d956b4f257b.png",
+    "static/media/linkedin_white_logo.png": "/ResumeWebsite/static/media/linkedin_white_logo.4b9828d688e8a30586bf.png",
+    "static/media/github_white_logo.png": "/ResumeWebsite/static/media/github_white_logo.9ed4794b1affed8a7951.png",
+    "static/media/sql_white_logo.png": "/ResumeWebsite/static/media/sql_white_logo.a1ef0308b30206062ead.png",
+    "static/media/spaceship_1_rotated.png": "/ResumeWebsite/static/media/spaceship_1_rotated.5644c5184d6eb855ec04.png",
+    "static/media/vue_white_logo.png": "/ResumeWebsite/static/media/vue_white_logo.b6c9555c0144f9a126af.png",
+    "index.html": "/ResumeWebsite/index.html",
+    "main.20da3a9a.css.map": "/ResumeWebsite/static/css/main.20da3a9a.css.map",
+    "main.b2c8ac1f.js.map": "/ResumeWebsite/static/js/main.b2c8ac1f.js.map",
+    "787.4be95ee4.chunk.js.map": "/ResumeWebsite/static/js/787.4be95ee4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20da3a9a.css",
+    "static/js/main.b2c8ac1f.js"
+  ]
+}
